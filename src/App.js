@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch, } from "react-router-dom";
+import Home from './components/Home'
+import Contact from './components/Contact'
+import Menu from './components/Menu'
+import Events from './components/Events'
+import NavBar from './components/NavBar'
+import Footer from './components/FooterAlt'
+import {Container} from 'semantic-ui-react'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <NavBar/>
+   <Container style={{margin: "3em 1em 5em 1em"}}>
+     <Switch>
+     <Route exact path='/' component={Home} />
+     {/* <Route exact path='/Contact' component={Contact} />
+     <Route exact path='/Menu' component={Menu} />
+     <Route exact path='/Events' component={Events} /> */}
+     </Switch>
+    </Container>
+    {/* <Footer/> */}
+  </>
   );
 }
 
