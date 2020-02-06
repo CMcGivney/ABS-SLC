@@ -9,22 +9,23 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <div className='mainFooter'>The Elysian Catering
+          <div className='mainFooter'>Park City Sip & Stir
           </div>
           <div className='phoneNum'>
             <Header.Content>
-              <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
+              <a className="email" href="tel:+1-301-992-7829">1-(301)-992-7829</a>
             </Header.Content>
            </div>
           <div className='bizAddress'>
             <Header.Content>
-            {/* business address here */}
+            business address here
             </Header.Content>
            </div>
           <div className='emailBox'>
-            <Header.Content>
-              <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
-            </Header.Content></div>
+         
+              <a className="email" href="mailto:SeanPalmer@gmail.com">SeanPalmer@gmail.com</a>
+            
+         </div>
           <div className='socialFollows'>
             <Header.Content>
              <SocialFollow/>

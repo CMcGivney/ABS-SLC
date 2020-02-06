@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import Contact from './components/Contact'
-import Menu from './components/Menu'
+import Services from './components/Services'
 import Events from './components/Events'
 import NavBar from './components/NavBar'
 import Footer from './components/FooterAlt'
@@ -13,15 +13,15 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container style={{margin: "3em 1em 5em 1em"}}>
+   <Container fluid >
      <Switch>
      <Route exact path='/' component={Home} />
-     {/* <Route exact path='/Contact' component={Contact} />
-     <Route exact path='/Menu' component={Menu} />
-     <Route exact path='/Events' component={Events} /> */}
+     <Route exact path='/Contact' component={Contact} />
+     <Route exact path='/Services' component={Services} />
+     <Route exact path='/Events' component={Events} />
      </Switch>
     </Container>
-    {/* <Footer/> */}
+    <Footer/>
   </>
   );
 }

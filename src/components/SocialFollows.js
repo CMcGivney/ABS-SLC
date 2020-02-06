@@ -7,17 +7,17 @@ export default function SocialFollow() {
   return (
     <div className="social-container">
      
-      <a href="https://twitter.com/Elysian_Truck" className="twitter social">
+      <a href="https://twitter.com/billy_mallon" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a
-        href="https://www.instagram.com/elysiancatering/"
+        href="https://www.instagram.com/seanpalmer"
         className="instagram social"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
       <a
-        href="https://www.facebook.com/Americasfoodtruck/"
+        href="https://www.facebook.com/profile.php?id=48500872/"
         className="facebook social"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />

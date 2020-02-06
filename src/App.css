@@ -1,38 +1,312 @@
-.App {
+.titleBox {
+  background-image: url(images/cocktail.jpg);
+  background-color: rgb(134, 134, 235);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  min-height: 30em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover, ;
+  -o-background-size: cover,;
+  /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
+  filter: grayscale(90%); */
+
+}
+
+.title {
+  background-color: rgba(173, 166, 166, 0.836);
+  opacity: 0.9;
+  width: 100%;
+}
+
+
+.mainHeader {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+}
+
+.motto {
+  font-family: 'Roboto', serif;
+}
+.homeContentGrid {
+  display: grid;
+  grid-template-rows: 1fr auto 20rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-areas: "about" 
+                       "twitter" 
+                       "awards";
+  grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(85, 61, 61);
+  color: white;
+  min-height: 50em;
+ 
+}
+
+.about {
+grid-area: about;
+background-color: black;
+padding: 2.5em 0 0 0;
+height: 10em;
+
+
+}
+.col-3 {
+  grid-area: twitter;
+  width: auto;
+  /* justify-self: center; */
+  padding: 1rem;
+}
+.col-2 {
+  grid-area: awards;
+
+}
+
+/*Contact Page Style & Layout*/
+.contactGrid {
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8em 10em 10em;
+  grid-template-areas: "email" "social" "phone";
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  /* background-image: url("./Images/plateOnWood.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 55em;
+  /* opacity: 0.9; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover, ;
+  -o-background-size: cover,;
+}
+
+.headerCont {
+  background-color: grey;
+  opacity: 0.8;
+  width: 100%;
+}
+.conHeader {
+  grid-area: header;
+  font-family: 'Roboto Slab', sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .emailBox {
+  grid-area: email;
+} */
+.socialFollows {
+  grid-area: social;
+  padding: 1em ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contactImg {
+  grid-area: img;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* styles for the social media icons */
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+ }
+ 
+ a.social:hover {
+ transform: translateY(-2px); 
+ color: chartreuse;
+ }
+ 
+ a.facebook {
+ color: #4968ad;
+ }
+ 
+ a.twitter {
+ color: #49a1eb;
+ }
+ 
+ a.instagram {
+ color: black;
+ }
+ /*Services Page Layout*/
+ .servicesGrid{
+  display: grid;
+  padding: 1em;
+  margin-top: 5rem;
+  min-height: 40rem;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: "srvHead srvHead" "col-1 col-2" "col-1 col-2";
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: start;
+  text-align: center;
+  /* background-image: url("./Images/plateOnWood.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover, ;
+  -o-background-size: cover,;
+ }
+ .service-header{
+   grid-area: srvHead;
+ }
+ .services-col-1{
+   grid-area: col-1;
+ }
+ .services-col-2{
+   grid-area: col-2;
+ }
+ 
+ /*Email Style*/
+.emailBox {
+  grid-area: email;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Roboto Slab', serif;
+  padding: .5em;
+
 }
 
-.App-link {
-  color: #61dafb;
+a.email {
+  color: darkblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a.email:hover {
+  color: hotpink;
 }
+/*Events Layout style*/
+.twitter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+/*Footer style*/
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+}
+
+.footerGrid {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: tan;
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "title address" 
+                       "email phone"  
+                       "social power"
+}
+
+.mainFooter {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  grid-area: title;
+}
+.phoneNum {
+  font-family: 'Roboto Slab', serif;
+  padding: .5em;
+  /* font-size: 2em; */
+  grid-area: phone;
+}
+.poweredBy {
+  font-family: 'Roboto Slab', serif;
+  /* font-size: 2em; */
+  grid-area: power;
+  padding: .5em;
+}
+.bizAddress{
+  grid-area: address;
+  padding: .5em;
+}
+/* Mobile size Media Query's */
+ /* @media only screen and (max-width: 767px) {
+   body{
+     margin: 0 0 0 0;
+     width: 100%;
+
+   }
+  .titleBox {
+    background-image: url(images/cocktail.jpg);
+    background-color: blue;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    min-height: 30em;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover, ;
+    -o-background-size: cover,;
+    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
+    filter: grayscale(90%); 
+  
+  }
+  
+  .title {
+    background-color: rgba(173, 166, 166, 0.836);
+    opacity: 0.9;
+    width: 100%;
+  }
+  
+  
+  .mainHeader {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+  }
+  
+  .motto {
+    font-family: 'Roboto', serif;
+  }
+  .homeContentGrid {
+    display: grid;
+    grid-template-columns: 1fr 35em; 
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "about" 
+                         "twitter" 
+                         "awards";
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(85, 61, 61);
+    color: white;
+    min-height: 50em;
+    width: 100%;
+   
+  }
+  .about {
+    grid-area: about;
+    background-color: black;
+    padding: 2.5em 0 0 0;
+    height: 10em;
+    
+    
+    }
+    .col-3 {
+      grid-area: twitter;
+      width: 100%;
+      justify-self: center;
+    }
+    .col-2 {
+      grid-area: awards;
+    
+    }
+ } */

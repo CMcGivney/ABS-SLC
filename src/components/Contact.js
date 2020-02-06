@@ -8,8 +8,8 @@ const Contact = () => (
     {/* <Header.Content as='h1' className="conHeader">The Elysian Catering Company</Header.Content> */}
       <div className="contactGrid"> 
       <div className="emailBox">
-        <Header as="h3" className="contactHead">Drop Us A Email</Header>
-        <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
+        <Header as="h3" className="contactHead">Reach Out With An Email</Header>
+        <a className="email" href="mailto:SeanPalmer@gmail.com">SeanPalmer@gmail.com</a>
       </div>
     
      <div className="socialFollows">
