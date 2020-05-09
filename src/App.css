@@ -1,6 +1,10 @@
+/* body, html {
+  background-color:  #A8D6EB;
+  
+} */
 .titleBox {
-  background-image: url(images/cocktail.jpg);
-  background-color: rgb(134, 134, 235);
+  background-image: url(images/salt-lake-city.jpg);
+  background-color: #A8D6EB;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -8,7 +12,7 @@
   display: flex;
   background-size: cover;
   width: 100%;
-  min-height: 30em;
+  min-height: 70vh;
   -webkit-background-size: cover;
   -moz-background-size: cover, ;
   -o-background-size: cover,;
@@ -17,11 +21,11 @@
 
 }
 
-.title {
-  background-color: rgba(173, 166, 166, 0.836);
+/* .title {
+   background-color: rgba(173, 166, 166, 0.836);
   opacity: 0.9;
-  width: 100%;
-}
+  width: 100%; 
+} */
 
 
 .mainHeader {
@@ -43,15 +47,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(85, 61, 61);
-  color: white;
   min-height: 50em;
  
 }
 
 .about {
 grid-area: about;
-background-color: black;
+background: black;
 padding: 2.5em 0 0 0;
 height: 10em;
 
@@ -202,14 +204,14 @@ a.email:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: tan;
+  background-color: #696969;
   display: grid;
   padding: 1em;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "title address" 
-                       "email phone"  
-                       "social power"
+  grid-template-areas: "title" "address" 
+                       "email" "phone"  
+                       "social" "power"
 }
 
 .mainFooter {
@@ -233,6 +235,74 @@ a.email:hover {
   grid-area: address;
   padding: .5em;
 }
+/*Contact */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
+  flex-wrap: wrap;
+  min-height: 30rem;
+}
+.contactTitle {
+  /* background-color: darkblue;
+  color: white; */
+  display: flex;
+  margin: 3rem 0 2rem;
+  justify-content: center;
+  justify-self: center;
+  height: 5rem;
+  width: 100%;
+  font-family: "Merriweather", serif;
+}
+.contactForm {
+  padding: 1rem 1rem;
+  min-height: 40rem;
+}
+.contactHead {
+  color:black;
+  align-self: center;
+  font-family: 'Solway', serif;
+  padding-left: 1rem;
+
+}
+.contactMeta {
+  align-self: center;
+  font-family: 'Merriweather', serif;
+}
+/*FAQ Page style*/
+.faqHead {
+  /* display:flex; */
+  text-align: center;
+  /* margin-bottom: 3rem; */
+  padding: 1rem 0;
+  /* font-family: 'Solway', serif; */
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  margin: 2rem 1rem;
+}
+.cardContainer {
+  justify-content: center;
+  /* margin: 1rem 1rem; */
+}
+.faqCard {
+ display: flex;
+}
+.cardHead {
+  justify-content: center;
+  padding: 1rem;
+}
+.cardMeta {
+  justify-content: center;
+  padding: 1rem;
+}
+/*End Of FAQ Styles*/
 /* Mobile size Media Query's */
  /* @media only screen and (max-width: 767px) {
    body{

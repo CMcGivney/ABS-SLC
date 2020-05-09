@@ -1,33 +1,21 @@
 import React from 'react'
 import {Header,} from 'semantic-ui-react'
-import SocialFollows from './SocialFollows'
-
+import ContactForm from './ContactForm.js'
+import NavBar from '../components/NavBar'
 
 const Contact = () => (
- <>
-    {/* <Header.Content as='h1' className="conHeader">The Elysian Catering Company</Header.Content> */}
-      <div className="contactGrid"> 
-      <div className="emailBox">
-        <Header as="h3" className="contactHead">Reach Out With An Email</Header>
-        <a className="email" href="mailto:SeanPalmer@gmail.com">SeanPalmer@gmail.com</a>
-      </div>
-    
-     <div className="socialFollows">
-       <Header.Content as="h3" >
-        Lets Connect
-       </Header.Content>
-      <SocialFollows/>
-     </div>
-     <div className='phoneNum'>
-       <Header.Content as="h3" >
-        Call Us
-       </Header.Content>
-       <Header.Content as='h4'>
-        <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
-       </Header.Content>
-     </div>
-  </div>
- </>
+  <>
+  <NavBar/>
+   <div className='contactTitle'>
+    <Header.Content as="h1" className="contactHead">Lets Connect</Header.Content>
+    <Header.Content as="h4" className="contactMeta">*contact us for current pricing</Header.Content>
+   </div>
+   <div className="contactContainer">
+    <div className="contactForm">
+     <ContactForm/>
+    </div>
+   </div>
+  </>
 )
 
 export default Contact;

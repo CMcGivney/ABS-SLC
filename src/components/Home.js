@@ -1,14 +1,15 @@
 import React from 'react'
 import {Header,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
-//live.websites.hibu.com.
+import NavBar from '../components/NavBar'
 
 const Home = () => (
  <>
   <div className="titleBox">
+ <NavBar/>
    <div className="title">
-    <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>Park City Sip & Stir</Header.Content>
-    <Header.Content as="h5" className="motto" style={{margin: ".4em 0 0 0"}}>"Motto or Mission Statement"</Header.Content>
+    <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>ABS SEAFOOD</Header.Content>
+    <Header.Content as="h3" className="motto" style={{margin: ".4em 0 0 0"}}>SALT LAKE CITY</Header.Content>
    </div>
   </div>
   <div className="homeContentGrid ">

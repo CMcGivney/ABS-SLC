@@ -1,14 +1,27 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
-import {Menu,} from 'semantic-ui-react'
+import {Menu, Image} from 'semantic-ui-react'
+import Logo from '../images/ABS-Logo.png'
 
 class Navbar extends React.Component {
+
  
   render() {
     return (
       <>
-       
-         <Menu style={{backgroundColor: "tan"}} pointing secondary fixed="top">
+         <Menu secondary fixed="top">
+          <Link to='/'>
+            <Menu.Item
+              name='Home'
+              id='home'
+            >
+              <Image
+              size='tiny' 
+              src={Logo} 
+            />
+            </Menu.Item>
+            </Link>
+            <Menu.Menu position="right">
           <Link to='/'>
             <Menu.Item
               name='Home'
@@ -16,27 +29,28 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/'}
             />
             </Link>
-          {/* <Link to='/Contact'>
+          <Link to='/Contact'>
             <Menu.Item
               name='Contact'
               id='contact'
               active={this.props.location.pathname === '/Contact'}
             />
-            </Link> */}
-          <Link to='/Services'>
+            </Link>
+          <Link to='/FAQ'>
             <Menu.Item
-              name='Services'
-              id='Services'
-              active={this.props.location.pathname === '/Services'}
+              name='FAQ'
+              id='FAQ'
+              active={this.props.location.pathname === '/FAQ'}
             />
             </Link>
-          <Link to='/Events'>
+            </Menu.Menu>
+          {/* <Link to='/Events'>
             <Menu.Item
               name='Events'
               id='events'
               active={this.props.location.pathname === '/Events'}
             />
-          </Link>
+          </Link> */}
          </Menu>
       
     </>
