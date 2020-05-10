@@ -3,7 +3,7 @@ import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import Contact from './components/Contact'
 import FAQ from './components/FAQ'
-// import NavBar from './components/NavBar'
+import NavBar from './components/NavBar'
 import Footer from './components/FooterAlt'
 import {Container} from 'semantic-ui-react'
 import './App.css'
@@ -12,7 +12,7 @@ function App() {
   return (
   <>
    <Container fluid >
-    {/* <NavBar/> */}
+    <NavBar/>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/Contact' component={Contact} />

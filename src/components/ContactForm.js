@@ -9,9 +9,7 @@ class ContactForm extends React.Component {
   state = {
            name: '',
            email: '',
-           dates: '',
            message: '',
-           numGuests: 0,
   }
 
 
@@ -19,9 +17,7 @@ class ContactForm extends React.Component {
     this.setState({
       name: '',
       email: '',
-      dates: 'mm/dd/yyyy',
       message: '',
-      numGuests: 0,
     })
     alert("Message Sent")
     this.props.history.push("/")
@@ -35,18 +31,16 @@ handleChange = (e) => {
 
 handleSubmit = (e) => {
   e.preventDefault();
- const {name, email, dates, numGuests, message} = this.state
+ const {name, email, message} = this.state
 
  let templateParams = {
   from_name: name,
   from_email: email,
-  to_name: 'stanbattle@gmail.com',
-  date_event: dates,
-  num_guests: numGuests,
+  to_name: 'Stan Battle',
   message_html: message,
  }
 
- emailjs.send('stanbattle@gmail.com', "template_G85KdgEv", templateParams, "user_8MVNXasymY2fplvCKCOlQ"
+ emailjs.send('stanbattle@ABSSeafood.com', "template_BP9yPyTn", templateParams, "user_JinG5bR4RRbrs0CgSIRDD"
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {

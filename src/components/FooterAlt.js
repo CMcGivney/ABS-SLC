@@ -12,8 +12,10 @@ class Footer extends React.Component {
           <div className='mainFooter'>ABS Seafood | Salt Lake City
           </div>
           <div className='phoneNum'>
-            <Header.Content>
-              <a className="email" href="tel:+1-858-531-6728">1-(858)-531-6728</a>
+            <Header.Content as="h4">
+               Stan Battle
+               <p>Business Title? like "regional sales manager"?</p>
+            <p>phone:  <a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></p>
             </Header.Content>
            </div>
           <div className='bizAddress'>
@@ -22,9 +24,7 @@ class Footer extends React.Component {
             </Header.Content>
            </div>
           <div className='emailBox'>
-         
-              <a className="email" href="mailto:Stan_Battle@gmail.com">Stan_Battle@gmail.com</a>
-            
+             <h4>email:  <a className="email" href="mailto:Stan@absseafood.com">Stan@ABSSeafood.com</a></h4>  
          </div>
           <div className='socialFollows'>
             <Header.Content>

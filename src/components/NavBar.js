@@ -9,48 +9,45 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-         <Menu secondary fixed="top">
+         <Menu secondary fixed='top'>
           <Link to='/'>
             <Menu.Item
               name='Home'
               id='home'
-            >
+             >
               <Image
               size='tiny' 
               src={Logo} 
-            />
+              alt="ABS Seafood Logo"
+             />
             </Menu.Item>
-            </Link>
+          </Link>
             <Menu.Menu position="right">
-          <Link to='/'>
-            <Menu.Item
-              name='Home'
-              id='home'
-              active={this.props.location.pathname === '/'}
-            />
-            </Link>
-          <Link to='/Contact'>
-            <Menu.Item
+             <Link to='/'>
+              <Menu.Item
+               name='Home'
+               as='h3'
+               id='home'
+               active={this.props.location.pathname === '/'}
+               />
+             </Link>
+            <Link to='/Contact'>
+             <Menu.Item
               name='Contact'
               id='contact'
+              as='h3'
               active={this.props.location.pathname === '/Contact'}
-            />
+             />
             </Link>
-          <Link to='/FAQ'>
-            <Menu.Item
+            <Link to='/FAQ'>
+             <Menu.Item
               name='FAQ'
               id='FAQ'
+              as='h3'
               active={this.props.location.pathname === '/FAQ'}
-            />
+              />
             </Link>
-            </Menu.Menu>
-          {/* <Link to='/Events'>
-            <Menu.Item
-              name='Events'
-              id='events'
-              active={this.props.location.pathname === '/Events'}
-            />
-          </Link> */}
+          </Menu.Menu>
          </Menu>
       
     </>
