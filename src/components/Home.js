@@ -1,6 +1,6 @@
 import React from 'react'
 import {Header, Image} from 'semantic-ui-react'
-import Tuna from '../images/TunaBreakDown.jpeg'
+import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
 import Twitter from './Twitter.js'
 

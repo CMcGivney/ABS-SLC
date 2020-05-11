@@ -6,7 +6,7 @@ import {Header, Card,} from 'semantic-ui-react'
 const Faq = () => (
   <>
   <div className="faqContainer">
-    <Header.Content as="h1" className="faqHead">Frequently Ask Questions</Header.Content>
+   <div className="faqHead"><Header.Content as="h1" className="faqHead">Frequently Ask Questions</Header.Content></div>
    <Card.Group className="cardContainer" stackable>
     <Card className="faqCard">
       <Card.Header as='h2' className="cardHead">How does pick-up work?</Card.Header>

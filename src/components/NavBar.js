@@ -26,7 +26,7 @@ class Navbar extends React.Component {
              <Link to='/'>
               <Menu.Item
                name='Home'
-               as='h3'
+               as='h4'
                id='home'
                active={this.props.location.pathname === '/'}
                />
@@ -35,7 +35,7 @@ class Navbar extends React.Component {
              <Menu.Item
               name='Contact'
               id='contact'
-              as='h3'
+              as='h4'
               active={this.props.location.pathname === '/Contact'}
              />
             </Link>
@@ -43,7 +43,7 @@ class Navbar extends React.Component {
              <Menu.Item
               name='FAQ'
               id='FAQ'
-              as='h3'
+              as='h4'
               active={this.props.location.pathname === '/FAQ'}
               />
             </Link>
