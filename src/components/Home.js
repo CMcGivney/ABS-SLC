@@ -1,11 +1,10 @@
 import React from 'react'
-import {Header, Button} from 'semantic-ui-react'
+import {Header, Image} from 'semantic-ui-react'
+import Tuna from '../images/TunaBreakDown.jpeg'
+import Slab from '../images/TunaSlab.jpeg'
 import Twitter from './Twitter.js'
 
-function alertBox(){
-   alert('You are leaving the SLC ABS Seafood page, prices and availability may vary.\n Please contact your regional sales representative for current pricing')
 
-}
 const Home = () => (
  <>
   <div className="titleBox">
@@ -15,21 +14,34 @@ const Home = () => (
    </div>
   </div>
   <div className="homeContentGrid ">
-     <div className='about'>
-      <Header.Content as="h3" >Mission Statement or List of Services?</Header.Content>
-      <Header.Content as="p">Do we want to link to the ABS Market?</Header.Content>
-      <Button
-      onClick={() => alertBox()}
-      href="https://www.absseafood.com/shop"
-      >ABS SF Market</Button>
-      <Header.Content as="p">Prices and availability may change. Contact your regional sales representative</Header.Content>
+     <div className='missionStatement'>
+      <Header.Content as="h2" >"Bringing the quality that is expected in the finest restaurants in the Bay Area, here to Utah."</Header.Content>
+      <Header.Content as="h4">~ABS Seafood Salt Lake City Promise~</Header.Content>
      </div>
-     <div className='col-2'>
-     <Header.Content as="h3" >List of Accomplishments and/or Reviews? </Header.Content>
+      <div className='homeContent'>
+       <div className='mainImage-1'>
+        <Image
+         size="large"
+         src={Tuna}
+         />
+       </div>
+       <div className="mainText">
+        <Header.Content as="h1" style={{textAlign: 'center'}}>Quality First Sourcing</Header.Content>
+        <Header.Content as="h3">Our seafood are sourced from the best locations around the globe. We also take the extra steps in making sure our suppliers are within our standards in terms of handling and sustainability.</Header.Content>
+       </div>
       </div>
-      <div className='col-3'>
-      <Twitter/>
-     </div>
+      <div className='homeContent'>
+       <div className="mainText">
+        <Header.Content as="h1" style={{textAlign: 'center'}}>High Standard Processing</Header.Content>
+        <Header.Content as="h3">Fishes are processed with the highest standards. Our team is trained to handle seafood properly and are dedicated in maintaining quality so you can enjoy seafood at its finest.</Header.Content>
+       </div>
+       <div className='mainImage-1'>
+        <Image
+         size="large"
+         src={Slab}
+         />
+       </div>
+      </div>
    </div>
   
 </>

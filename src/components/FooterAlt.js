@@ -9,14 +9,14 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <div className='mainFooter'>ABS Seafood | Salt Lake City
+          <div className='mainFooter'>ABS Seafood Salt Lake City
           </div>
           <div className='phoneNum'>
-            <Header.Content as="h4">
+            <Header.Content as="h3">
                Stan Battle
-               <p>Business Title? like "regional sales manager"?</p>
-            <p>phone:  <a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></p>
+               <h5>Regional Sales Manager</h5>
             </Header.Content>
+          <h4>phone:<a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></h4>
            </div>
           <div className='bizAddress'>
             <Header.Content>

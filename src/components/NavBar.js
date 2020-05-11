@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
-import Logo from '../images/ABS-Logo.png'
+import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
 
 class Navbar extends React.Component {
 
