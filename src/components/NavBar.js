@@ -1,12 +1,37 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
+import DropDownMenu from './DropDownMenu.js'
 import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
 
 class Navbar extends React.Component {
-
- 
+  state = {
+    width: window.screen.width
+  }
+  
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+  
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+  
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.screen.width });
+  };
+  
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 500;
+  
+    if (isMobile)
+    return (
+      <DropDownMenu/>
+    )
+    else
     return (
       <>
          <Menu secondary fixed='top'>
@@ -39,12 +64,12 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Contact'}
              />
             </Link>
-            <Link to='/Inventory'>
+            <Link to='/Products'>
              <Menu.Item
-              name='Inventory'
-              id='Inventory'
+              name='Products'
+              id='Products'
               as='h4'
-              active={this.props.location.pathname === '/Inventory'}
+              active={this.props.location.pathname === '/Products'}
              />
             </Link>
             <Link to='/FAQ'>

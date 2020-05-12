@@ -172,7 +172,7 @@ a.email:hover {
 }
 .contactTitle {
   display: flex;
-  margin: 5rem 0 2rem;
+  margin: 10rem 0 2rem;
   justify-content: center;
   justify-self: center;
   height: 5rem;
@@ -229,5 +229,15 @@ a.email:hover {
 .inventoryContainer {
   height: auto;
   padding: 5rem 0 5rem 0;
-
+  margin-top: 2rem;
+}
+.proHead {
+  text-align: center;
+  padding: 1rem 0;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: black;
 }
