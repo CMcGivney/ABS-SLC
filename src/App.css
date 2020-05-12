@@ -225,81 +225,9 @@ a.email:hover {
   justify-content: center;
   padding: 1rem;
 }
-/*End Of FAQ Styles*/
-/* Mobile size Media Query's */
- /* @media only screen and (max-width: 767px) {
-   body{
-     margin: 0 0 0 0;
-     width: 100%;
+/* Inventory */
+.inventoryContainer {
+  height: auto;
+  padding: 5rem 0 5rem 0;
 
-   }
-  .titleBox {
-    background-image: url(images/cocktail.jpg);
-    background-color: blue;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    background-size: cover;
-    width: 100%;
-    min-height: 30em;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover, ;
-    -o-background-size: cover,;
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
-    filter: grayscale(90%); 
-  
-  }
-  
-  .title {
-    background-color: rgba(173, 166, 166, 0.836);
-    opacity: 0.9;
-    width: 100%;
-  }
-  
-  
-  .mainHeader {
-    font-family: 'Roboto Slab', serif;
-    font-size: 50px;
-  }
-  
-  .motto {
-    font-family: 'Roboto', serif;
-  }
-  .homeContentGrid {
-    display: grid;
-    grid-template-columns: 1fr 35em; 
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas: "about" 
-                         "twitter" 
-                         "awards";
-    grid-gap: 1em;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(85, 61, 61);
-    color: white;
-    min-height: 50em;
-    width: 100%;
-   
-  }
-  .about {
-    grid-area: about;
-    background-color: black;
-    padding: 2.5em 0 0 0;
-    height: 10em;
-    
-    
-    }
-    .col-3 {
-      grid-area: twitter;
-      width: 100%;
-      justify-self: center;
-    }
-    .col-2 {
-      grid-area: awards;
-    
-    }
- } */
+}
