@@ -78,37 +78,37 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     mahiMahi = new Fresh(MahiMahi, "Mahi Mahi Fillet", "Mahi Mahi Fillet", "Dense, Flaky, Delicious")
     seafoodFresh.push(mahiMahi)
 
-    manilaClams = new Fresh(Manilla, "Manila Clams", "Manila Clams", "Dense, Flaky, Delicious")
+    manilaClams = new Fresh(Manilla, "Manila Clams", "Manila Clams", "Sweet & Briny Clams")
     seafoodFresh.push(manilaClams)
 
     pEIMussel = new Fresh(PEI, "PEI Mussels", "PEI Mussels", "Harvested of the coast of Prince Edward Island, Canada")
     seafoodFresh.push(pEIMussel)
 
-    shrimp15 = new Frozen(Logo, "13/15 Jumbo Shrimp Deveined Tail On", "13/15 Jumbo Shrimp Deviened Tail On", "Dense, Flaky, Delicious")
+    shrimp15 = new Frozen(Logo, "13/15 Jumbo Shrimp Deveined Tail On", "13/15 Jumbo Shrimp Deviened Tail On", "")
     seafoodFrozen.push(shrimp15)
 
-    shrimp20 = new Frozen(Shrimp20, "16/20 Medium Shrimp Deveined Tail oO", "16/20 Medium Shrimp Deveined Tail On", "Dense, Flaky, Delicious")
+    shrimp20 = new Frozen(Shrimp20, "16/20 Medium Shrimp Deveined Tail oO", "16/20 Medium Shrimp Deveined Tail On", "")
     seafoodFrozen.push(shrimp20)
 
-    shrimp90 = new Frozen(Shrimp90, "71/90 Petite Shrimp Deveined Tail Off", "71/90 Petite Shrimp Deveined Tail Off", "Dense, Flaky, Delicious")
+    shrimp90 = new Frozen(Shrimp90, "71/90 Petite Shrimp Deveined Tail Off", "71/90 Petite Shrimp Deveined Tail Off", "")
     seafoodFrozen.push(shrimp90)
 
-    lobster = new Frozen(LobsterTail, "Cold Water Lobster Tail Shell On 4-5oz/piece", "Cold Water Lobster Tail Shell On 4-5oz/piece", "Dense, Flaky, Delicious")
+    lobster = new Frozen(LobsterTail, "Cold Water Lobster Tail Shell On 4-5oz/piece", "Cold Water Lobster Tail Shell On 4-5oz/piece", "")
     seafoodFrozen.push(lobster)
 
     hamachi = new Frozen(Hamachi, "Hamachi, Yellowtail Amberjack Fillet, 5-6lbs/piece", "Hamachi, Yellowtail Amberjack Fillet, 5-6lbs/piece", "Our Hamachi fillets are direct from Japan. They are responsibly farmed in Southern Japan. These fatty fish are a popular fish for sushi and poke. Don’t forget to grill the kama (collar) for a special treat. Each fillet is vacuum packed and treated before freezing to increase the color and longevity of the fish. ")
     seafoodFrozen.push(hamachi)
 
-    albacore = new Frozen(Albacore, "Albacore Loin, 1lb/piece", "Albacore Loin, 1lb/piece", "Dense, Flaky, Delicious")
+    albacore = new Frozen(Albacore, "Albacore Loin, 1lb/piece", "Albacore Loin, 1lb/piece", "")
     seafoodFrozen.push(albacore)
 
-    yellowfinTuna = new Frozen(Yellowfin, "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "Dense, Flaky, Delicious")
+    yellowfinTuna = new Frozen(Yellowfin, "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "")
     seafoodFrozen.push(yellowfinTuna)
 
-    mahiFrzn = new Frozen(MahiMahi, "Mahi Mahi Fillet 3-5lbs/piece", "Mahi Mahi Fillet 3-5lbs/piece", "Dense, Flaky, Delicious")
+    mahiFrzn = new Frozen(MahiMahi, "Mahi Mahi Fillet 3-5lbs/piece", "Mahi Mahi Fillet 3-5lbs/piece", "")
     seafoodFrozen.push(mahiFrzn)
 
-    scallop = new Frozen(Scallop, "Jumbo Domestic Fresh/Frozen Scallop", "Jumbo Domestic Fresh/Frozen Scallop", "Dense, Flaky, Delicious")
+    scallop = new Frozen(Scallop, "Jumbo Domestic Fresh/Frozen Scallop", "Jumbo Domestic Fresh/Frozen Scallop", "")
     seafoodFrozen.push(scallop)
 
     japanScallop = new Frozen(Scallop, "Medium Japanese Fresh/Frozen Scallop", "Medium Japanese Fresh/Frozen Scallop", "These scallops are first picked in Hokkaido and then brought over to the United States where they are prepared and packed. 10/20 Size = 10-20 pieces per pound")
@@ -124,10 +124,10 @@ const Inventory = () => (
   <>
   <div className="inventoryContainer">
    <div className="faqHead">
-    <Header.Content as="h1">Retail Offerings</Header.Content>
-    <Header.Content as="h5">"Contact your regional sales rep. for pricing, availability and wholesale offerings"</Header.Content>
+    <Header.Content as="h1">Retail Products</Header.Content>
+    <Header.Content as="h5">"Contact your regional sales rep. for pricing, availability and wholesale products"</Header.Content>
    </div>
-    <Header.Content as="h1" className="proHead">Fresh Offerings</Header.Content>
+    <Header.Content as="h1" className="proHead">Fresh Products</Header.Content>
     <Card.Group className="cardContainer" stackable>
      {seafoodFresh.map( seafood => 
       <Card className="faqCard">
@@ -144,7 +144,7 @@ const Inventory = () => (
      }
     </Card.Group>
 
-    <Header.Content as="h1" className="proHead">Frozen Offerings</Header.Content>
+    <Header.Content as="h1" className="proHead">Frozen Products</Header.Content>
      <Card.Group className="cardContainer" stackable>
       {seafoodFrozen.map( frozen => 
        <Card className="faqCard">
