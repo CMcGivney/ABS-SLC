@@ -48,7 +48,8 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     shrimp15, shrimp20, shrimp90, lobster, hamachi, albacore,
     yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi
 
-    cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Dense, Flaky, Delicious")
+//Fresh Products
+    cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Rich Flavor, Dense Texture, Flaky, Buttery and Delicious")
     seafoodFresh.push(cod)
 
     sole = new Fresh(Petrale, "West Coast Petrale Sole Fillet", "West Coast Petrale Sole Fillet", "This is a popular flatfish caught in the wild on the West Coast. It has a mild flavor and good texture that can be cooked and used in a variety of dishes.")
@@ -75,7 +76,7 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     stripedBass = new Fresh(Striped, "Baja Striped Bass Fillet", "Baja Striped Bass Fillet", "With it’s clean mouth feel, semi firm texture and superb fat content this fish allows for many preparation options: whole fried, sushi, sashimi, tempura, grilling, poaching and braising….EAT the skin – it crisps beautifully and has the snap of a fresh sea cracker.")
     seafoodFresh.push(stripedBass)
 
-    mahiMahi = new Fresh(MahiMahi, "Mahi Mahi Fillet", "Mahi Mahi Fillet", "Dense, Flaky, Delicious")
+    mahiMahi = new Fresh(MahiMahi, "Mahi Mahi Fillet", "Mahi Mahi Fillet", "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakiness")
     seafoodFresh.push(mahiMahi)
 
     manilaClams = new Fresh(Manilla, "Manila Clams", "Manila Clams", "Sweet & Briny Clams")
@@ -83,7 +84,7 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
 
     pEIMussel = new Fresh(PEI, "PEI Mussels", "PEI Mussels", "Harvested of the coast of Prince Edward Island, Canada")
     seafoodFresh.push(pEIMussel)
-
+//Frozen Products
     shrimp15 = new Frozen(Logo, "13/15 Jumbo Shrimp Deveined Tail On", "13/15 Jumbo Shrimp Deviened Tail On", "")
     seafoodFrozen.push(shrimp15)
 
@@ -99,16 +100,16 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     hamachi = new Frozen(Hamachi, "Hamachi, Yellowtail Amberjack Fillet, 5-6lbs/piece", "Hamachi, Yellowtail Amberjack Fillet, 5-6lbs/piece", "Our Hamachi fillets are direct from Japan. They are responsibly farmed in Southern Japan. These fatty fish are a popular fish for sushi and poke. Don’t forget to grill the kama (collar) for a special treat. Each fillet is vacuum packed and treated before freezing to increase the color and longevity of the fish. ")
     seafoodFrozen.push(hamachi)
 
-    albacore = new Frozen(Albacore, "Albacore Loin, 1lb/piece", "Albacore Loin, 1lb/piece", "")
+    albacore = new Frozen(Albacore, "Albacore Loin, 1lb/piece", "Albacore Loin, 1lb/piece", "Fresh Albacore has a mild to medium flavor profile with firm flesh and large flakes. Like other tunas, it has a “steak-like” texture, but less firm than Yellowfin or Bigeye Tuna. It does however have a higher fat content which gives it a richness of taste. Albacore Tuna is also called Tombo Tuna.")
     seafoodFrozen.push(albacore)
 
-    yellowfinTuna = new Frozen(Yellowfin, "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "")
+    yellowfinTuna = new Frozen(Yellowfin, "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "Center Cut Yellowfin Tuna Loin 5-7lbs/piece", "A mild, meaty flavor — similar, some say, to swordfish. It's more flavorful than albacore, but leaner than bluefin")
     seafoodFrozen.push(yellowfinTuna)
 
-    mahiFrzn = new Frozen(MahiMahi, "Mahi Mahi Fillet 3-5lbs/piece", "Mahi Mahi Fillet 3-5lbs/piece", "")
+    mahiFrzn = new Frozen(MahiMahi, "Mahi Mahi Fillet 3-5lbs/piece", "Mahi Mahi Fillet 3-5lbs/piece", "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakiness")
     seafoodFrozen.push(mahiFrzn)
 
-    scallop = new Frozen(Scallop, "Jumbo Domestic Fresh/Frozen Scallop", "Jumbo Domestic Fresh/Frozen Scallop", "")
+    scallop = new Frozen(Scallop, "Jumbo Domestic Fresh/Frozen Scallop", "Jumbo Domestic Fresh/Frozen Scallop", "Scallops are a highly prized shellfish for their delicate texture and taste. When cooked properly, like a quick sear in a hot pan, they are deliciously sweet and tender, needing very little fat or added flavor")
     seafoodFrozen.push(scallop)
 
     japanScallop = new Frozen(Scallop, "Medium Japanese Fresh/Frozen Scallop", "Medium Japanese Fresh/Frozen Scallop", "These scallops are first picked in Hokkaido and then brought over to the United States where they are prepared and packed. 10/20 Size = 10-20 pieces per pound")
@@ -134,6 +135,7 @@ const Inventory = () => (
        <Image
          src={seafood.image}
          alt={seafood.image_alt}
+         size='medium'
         />
        <Card.Content>
         <Card.Header as='h2' className="cardHead">{seafood.type}</Card.Header>
