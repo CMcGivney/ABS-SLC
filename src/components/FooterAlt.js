@@ -24,7 +24,7 @@ class Footer extends React.Component {
             </Header.Content>
            </div>
           <div className='emailBox'>
-             <h4>email:  <a className="email" href="mailto:Stan@absseafood.com">Stan@ABSSeafood.com</a></h4>  
+             <h4>email:  <a className="email" href="mailto:Stan@absseafood.com?subject=Mailed from Website">Stan@ABSSeafood.com</a></h4>  
          </div>
           <div className='socialFollows'>
             <Header.Content>

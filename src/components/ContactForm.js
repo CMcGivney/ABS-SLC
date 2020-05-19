@@ -40,7 +40,7 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send('stanbattle@ABSSeafood.com', "template_BP9yPyTn", templateParams, "user_JinG5bR4RRbrs0CgSIRDD"
+ emailjs.send('stanbattle15_gmail_com', "template_BP9yPyTn", templateParams, "user_JinG5bR4RRbrs0CgSIRDD"
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
