@@ -55,7 +55,7 @@ text-align: center;
 .mainImage-1{
   width: 50%;
   justify-self: center;
-  /* padding: 1rem 1rem; */
+  padding: 1rem 1rem;
 }
 .mainText {
   width: 50%;
@@ -239,7 +239,15 @@ a.email:hover {
   align-self: center;
   justify-self: center;
 }
+/*  dropdown menu*/
+.dropDown {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.menuBars {
+  align-self: end
 
+}
 @media only screen and (max-width: 540px) {
   .homeContent {
     display: flex;
@@ -251,7 +259,7 @@ a.email:hover {
   .mainImage-1{
     width: auto;
     justify-self: center;
-   
+    padding: 0
   }
   .mainText {
     width: auto;

@@ -18,7 +18,7 @@ class DropDownMenu extends React.Component {
         fluid
         fixed="top"
         style={{backgroundColor: "black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}}>
-        <Container>
+        <Container className="dropDown">
            <Link to="/">
            <Menu.Item 
             style={{padding: ".5rem" }} 
@@ -35,6 +35,7 @@ class DropDownMenu extends React.Component {
                 style={{ margin: '0', padding: "0", color: "white" }} 
                 scrolling
                 button
+                className="menuBars"
                 >
                 <Dropdown.Menu>
                   <Link to='/'>
