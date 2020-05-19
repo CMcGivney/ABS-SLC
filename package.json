@@ -25,6 +25,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
+    "sitemap": "babel-node src/sitemap/generator.js",
     "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,5 +45,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "react-router-sitemap": "^1.2.0"
   }
 }
