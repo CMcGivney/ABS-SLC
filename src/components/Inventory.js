@@ -1,6 +1,6 @@
 import React from 'react'
 import {Header, Card, Image} from 'semantic-ui-react'
-import Logo from '../images/abs-logo.jpeg'
+import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
 import BlackCod from '../images/blackCodABS.jpeg'
 import PacificSnapper from '../images/rockcodfillet.jpg'
 import Ahi from '../images/ahituna.jpeg'
@@ -30,6 +30,7 @@ class Fresh {
    this.image_alt = image_alt;
    this.type = type;
    this.description = description;
+   
  }
 }
 class Frozen { 
@@ -38,6 +39,7 @@ class Frozen {
    this.image_alt = image_alt;
    this.type = type;
    this.description = description;
+   
  }
 }
 
@@ -49,7 +51,7 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi
 
 //Fresh Products
-    cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Rich Flavor, Dense Texture, Flaky, Buttery and Delicious")
+    cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Rich Flavor, Dense Texture, Flaky, Buttery and Delicious",)
     seafoodFresh.push(cod)
 
     sole = new Fresh(Petrale, "West Coast Petrale Sole Fillet", "West Coast Petrale Sole Fillet", "This is a popular flatfish caught in the wild on the West Coast. It has a mild flavor and good texture that can be cooked and used in a variety of dishes.")
@@ -121,6 +123,7 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     unagi = new Frozen(Unagi, "Unagi, Freshwater Eel 14oz Per Piece", "Unagi, Freshwater Eel 14oz Per Piece", "Rich, Buttery and Sweet")
     seafoodFrozen.push(unagi)
 
+
 const Inventory = () => (
   <>
   <div className="inventoryContainer">
@@ -130,8 +133,9 @@ const Inventory = () => (
    </div>
     <Header.Content as="h1" className="proHead">Fresh Products</Header.Content>
     <Card.Group className="cardContainer" stackable>
-     {seafoodFresh.map( seafood => 
-      <Card className="faqCard">
+     {seafoodFresh.map( (seafood, index) => 
+      <Card className="faqCard" key={index}>
+    
        <Image
          src={seafood.image}
          alt={seafood.image_alt}
@@ -145,12 +149,13 @@ const Inventory = () => (
       </Card>
       )
      }
+      {console.log(seafoodFresh)}
     </Card.Group>
 
     <Header.Content as="h1" className="proHead">Frozen Products</Header.Content>
      <Card.Group className="cardContainer" stackable>
-      {seafoodFrozen.map( frozen => 
-       <Card className="faqCard">
+      {seafoodFrozen.map( (frozen, index) => 
+       <Card className="faqCard" key={index} >
         <Image
           src={frozen.image}
           alt={frozen.image_alt}
@@ -162,11 +167,14 @@ const Inventory = () => (
         <Card.Meta className="cardMeta">{frozen.description}</Card.Meta>
        </Card.Content>    
       </Card>
+      
       )
      }
     </Card.Group>
    </div>
   </>
+       
 )
+
 
 export default Inventory;

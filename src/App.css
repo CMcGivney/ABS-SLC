@@ -51,19 +51,17 @@ text-align: center;
   margin: 1rem 1rem;
   width: 100%;
   justify-content: center;
-
 }
 .mainImage-1{
+  width: 50%;
   justify-self: center;
-  padding: 1rem 1rem;
-  
+  /* padding: 1rem 1rem; */
 }
 .mainText {
-  width: 90%;
+  width: 50%;
   align-self: center;
   padding: 1rem 1rem;
   text-align: center
-
 }
 /* styles for the social media icons */
 a.social {
@@ -122,11 +120,6 @@ a.email:hover {
 }
 
 .footerGrid {
-  /* position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white; */
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -245,4 +238,25 @@ a.email:hover {
 .imageProduct {
   align-self: center;
   justify-self: center;
+}
+
+@media only screen and (max-width: 540px) {
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .mainImage-1{
+    width: auto;
+    justify-self: center;
+   
+  }
+  .mainText {
+    width: auto;
+    align-self: center;
+    padding: 1rem 1rem;
+    text-align: center
+  }
 }

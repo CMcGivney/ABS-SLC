@@ -2,7 +2,7 @@ import React from 'react'
 import {Header, Image} from 'semantic-ui-react'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
-import Twitter from './Twitter.js'
+// import Twitter from './Twitter.js'
 
 
 const Home = () => (
@@ -27,13 +27,13 @@ const Home = () => (
        </div>
        <div className="mainText">
         <Header.Content as="h1" style={{textAlign: 'center'}}>Quality First Sourcing</Header.Content>
-        <Header.Content as="h3" style={{padding: "1rem"}}>Our seafood are sourced from the best locations around the globe. We also take the extra steps in making sure our suppliers are within our standards in terms of handling and sustainability.</Header.Content>
+        <Header.Content as="h3" style={{padding: "1rem 2rem"}}>Our seafood are sourced from the best locations around the globe. We also take the extra steps in making sure our suppliers are within our standards in terms of handling and sustainability.</Header.Content>
        </div>
       </div>
       <div className='homeContent'>
        <div className="mainText">
         <Header.Content as="h1" style={{textAlign: 'center'}}>High Standard Processing</Header.Content>
-        <Header.Content as="h3" style={{padding: "1rem"}}>Fishes are processed with the highest standards. Our team is trained to handle seafood properly and are dedicated in maintaining quality so you can enjoy seafood at its finest.</Header.Content>
+        <Header.Content as="h3" style={{padding: "1rem 2rem"}}>Fishes are processed with the highest standards. Our team is trained to handle seafood properly and are dedicated in maintaining quality so you can enjoy seafood at its finest.</Header.Content>
        </div>
        <div className='mainImage-1'>
         <Image
