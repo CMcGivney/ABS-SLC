@@ -59,7 +59,7 @@ text-align: center;
   
 }
 .mainText {
-  width: 35rem;
+  width: 90%;
   align-self: center;
   padding: 1rem 1rem;
   text-align: center
@@ -216,6 +216,7 @@ a.email:hover {
 }
 .faqCard {
  display: flex;
+ align-items: center;
 }
 .cardHead {
   justify-content: center;
@@ -240,4 +241,8 @@ a.email:hover {
   margin-bottom: 1.5rem;
   color: white;
   background-color: black;
+}
+.imageProduct {
+  align-self: center;
+  justify-self: center;
 }

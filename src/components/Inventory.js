@@ -135,7 +135,8 @@ const Inventory = () => (
        <Image
          src={seafood.image}
          alt={seafood.image_alt}
-         size='medium'
+         className="imageProduct"
+         fluid
         />
        <Card.Content>
         <Card.Header as='h2' className="cardHead">{seafood.type}</Card.Header>
@@ -153,6 +154,8 @@ const Inventory = () => (
         <Image
           src={frozen.image}
           alt={frozen.image_alt}
+          className="imageProduct"
+          fluid
          />
         <Card.Content>
         <Card.Header as='h2' className="cardHead">{frozen.type}</Card.Header>
