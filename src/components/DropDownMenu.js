@@ -12,13 +12,14 @@ class DropDownMenu extends React.Component {
     return (
       <>
       <Menu 
+        
         compact 
         size="large" 
         pointing 
         fluid
         fixed="top"
         style={{backgroundColor: "black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}}>
-        <Container className="dropDown">
+        <Container className="dropDown" >
            <Link to="/">
            <Menu.Item 
             style={{padding: ".5rem" }} 
@@ -30,6 +31,7 @@ class DropDownMenu extends React.Component {
              </Menu.Item>
              </Link>
               <Dropdown 
+                pointing="right"
                 icon="bars" 
                 item
                 style={{ margin: '0', padding: "0", color: "white" }} 

@@ -242,10 +242,11 @@ a.email:hover {
 /*  dropdown menu*/
 .dropDown {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .menuBars {
-  align-self: end
+  align-self: center;
 
 }
 @media only screen and (max-width: 540px) {
