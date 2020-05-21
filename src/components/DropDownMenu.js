@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Dropdown, Image, Container} from 'semantic-ui-react'
-import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
+import Logo from '../images/ABS-SEAFOOD-SLC-logo.png'
 
 
 class DropDownMenu extends React.Component {
@@ -12,7 +12,6 @@ class DropDownMenu extends React.Component {
     return (
       <>
       <Menu 
-        
         compact 
         size="large" 
         pointing 
@@ -34,7 +33,7 @@ class DropDownMenu extends React.Component {
                 pointing="right"
                 icon="bars" 
                 item
-                style={{ margin: '0', padding: "0", color: "white" }} 
+                style={{ margin: '0', padding: "1rem", color: "white" }} 
                 scrolling
                 button
                 className="menuBars"

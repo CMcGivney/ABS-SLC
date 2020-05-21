@@ -2,7 +2,12 @@ import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
 import DropDownMenu from './DropDownMenu.js'
-import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
+import Logo from '../images/ABS-SEAFOOD-SLC-logo.png'
+
+const navStyles = {
+  padding: '1rem',
+  
+}
 
 class Navbar extends React.Component {
   state = {
@@ -47,7 +52,7 @@ class Navbar extends React.Component {
              />
             </Menu.Item>
           </Link>
-            <Menu.Menu position="right">
+            <Menu.Menu position="right" style={navStyles}>
              <Link to='/'>
               <Menu.Item
                name='Home'
