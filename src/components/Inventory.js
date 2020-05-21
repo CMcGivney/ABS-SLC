@@ -1,6 +1,6 @@
 import React from 'react'
 import {Header, Card, Image} from 'semantic-ui-react'
-import Logo from '../images/ABS-SEAFOOD-SLC-logo.jpg'
+import Logo from '../images/ABS-SEAFOOD-SLC-logo.png'
 import BlackCod from '../images/blackCodABS.jpeg'
 import PacificSnapper from '../images/rockcodfillet.jpg'
 import Ahi from '../images/ahituna.jpeg'

@@ -9,7 +9,7 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <div className='mainFooter'>ABS Seafood Salt Lake City
+          <div className='mainFooter'>ABS Seafood SLC, Utah
           </div>
           <div className='phoneNum'>
             <Header.Content as="h3">

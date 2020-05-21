@@ -2,21 +2,44 @@ import React from 'react'
 import {Header, Image} from 'semantic-ui-react'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
-// import Twitter from './Twitter.js'
+import { Parallax,} from 'react-parallax';
+import SLCMTNS from "../images/salt-lake-city2.jpg"
 
+const insideStyles = {
+   background: "#A8D6EB",
+   padding: 20,
+   position: "absolute",
+   top: "50%",
+   left: "50%",
+   transform: "translate(-50%,-50%)",
+   borderRadius: "50%",
+   height: '20rem',
+   display: 'flex',
+   flexDirection: 'column',
+   justifyContent: 'center'
+ };
 
 const Home = () => (
  <>
-  <div className="titleBox">
-   <div className="title">
-    <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>ABS Seafood</Header.Content>
-    <Header.Content as="h2" className="motto" style={{margin: ".4em 0 0 0"}}>Salt Lake City, Utah</Header.Content>
-   </div>
-  </div>
+ 
+    <Parallax
+      bgImage={SLCMTNS}
+      bgImageAlt="SLC Mountains covered in snow"
+      strength={-300}
+       >
+        <div className="titleBox" >
+         <div style={insideStyles}>
+          <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>ABS Seafood</Header.Content>
+          <Header.Content as="h2" className="motto" style={{margin: ".4em 0 0 0"}}>Salt Lake City, Utah</Header.Content>
+         </div>
+        </div>
+            {/* <div style={{ height: '50vh', width: "100%",  }} /> */}
+   </Parallax>
+
   <div className="homeContentGrid ">
      <div className='missionStatement'>
       <Header.Content as="h2" style={{padding: "1rem"}} >"Bringing the quality that is expected in the finest restaurants in the Bay Area, here to Utah."</Header.Content>
-      <Header.Content as="h4">~ABS Seafood Salt Lake City Promise~</Header.Content>
+      <Header.Content as="h4">~ Our Promise & Commitment ~</Header.Content>
      </div>
       <div className='homeContent'>
        <div className='mainImage-1'>

@@ -3,20 +3,14 @@ body, html {
 }
 
 .titleBox {
-  background-image: url(images/salt-lake-city.jpg);
-  background-color: #A8D6EB;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-size: cover;
-  width: 100%;
-  min-height: 80vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover ;
-  -o-background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  
 }
 
 .mainHeader {
