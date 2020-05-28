@@ -32,7 +32,6 @@ body, html {
 }
 
 .missionStatement {
-grid-area: about;
 background: black;
 padding: 3rem 0 ;
 width: 100%;

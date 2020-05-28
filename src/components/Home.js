@@ -33,7 +33,6 @@ const Home = () => (
           <Header.Content as="h2" className="motto" style={{margin: ".4em 0 0 0"}}>Salt Lake City, Utah</Header.Content>
          </div>
         </div>
-            {/* <div style={{ height: '50vh', width: "100%",  }} /> */}
    </Parallax>
 
   <div className="homeContentGrid ">
