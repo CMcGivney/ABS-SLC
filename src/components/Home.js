@@ -9,7 +9,7 @@ const insideStyles = {
    background: "#A8D6EB",
    padding: 20,
    position: "absolute",
-   top: "50%",
+   top: "55%",
    left: "50%",
    transform: "translate(-50%,-50%)",
    borderRadius: "50%",

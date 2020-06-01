@@ -149,7 +149,6 @@ const Inventory = () => (
       </Card>
       )
      }
-      {console.log(seafoodFresh)}
     </Card.Group>
 
     <Header.Content as="h1" className="proHead">Frozen Products</Header.Content>
@@ -166,8 +165,7 @@ const Inventory = () => (
         <Card.Header as='h2' className="cardHead">{frozen.type}</Card.Header>
         <Card.Meta className="cardMeta">{frozen.description}</Card.Meta>
        </Card.Content>    
-      </Card>
-      
+      </Card>     
       )
      }
     </Card.Group>

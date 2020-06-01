@@ -9,14 +9,13 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <div className='mainFooter'>ABS Seafood SLC, Utah
-          </div>
+          <Header.Content as="h1" className='mainFooter'>ABS Seafood SLC, Utah</Header.Content>
           <div className='phoneNum'>
-            <Header.Content as="h3">
+            <Header.Content as="h2">
                Stan Battle
                <p style={{fontSize:"1rem"}}>Regional Sales Manager</p>
             </Header.Content>
-          <h4>phone:<a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></h4>
+          <Header.Content as="h3">phone:<a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></Header.Content>
            </div>
           <div className='bizAddress'>
             <Header.Content>
@@ -26,7 +25,7 @@ class Footer extends React.Component {
           <div className='emailBox'>
              <h4>email:  <a className="email" href="mailto:Stan@absseafood.com?subject=Mailed from Website">Stan@ABSSeafood.com</a></h4>  
          </div>
-          <div className='socialFollows'>
+          <div >
             <Header.Content>
              <SocialFollow/>
             </Header.Content>
