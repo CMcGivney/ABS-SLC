@@ -1,7 +1,5 @@
 import React from "react"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faTwitter, faInstagram, faFacebook} from "@fortawesome/free-brands-svg-icons"
+import { Icon } from 'semantic-ui-react'
 
 export default function SocialFollow() {
   return (
@@ -10,8 +8,9 @@ export default function SocialFollow() {
       <a 
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/ABS_Seafood_SLC" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
+        href="https://twitter.com/ABS_Seafood_SLC" className="twitter social"
+        >
+        <Icon size="big" name="twitter" />
       </a>
       <a
         target="_blank"
@@ -19,7 +18,7 @@ export default function SocialFollow() {
         href="https://www.instagram.com/absseafood/?hl=en"
         className="instagram social"
       >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <Icon size="big" name="instagram" />
       </a>
       <a
         target="_blank"
@@ -27,7 +26,7 @@ export default function SocialFollow() {
         href="https://www.facebook.com/ABSseafood"
         className="facebook social"
       >
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
+        <Icon size="big" name="facebook" />
       </a>
     </div>
   )

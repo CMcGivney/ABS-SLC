@@ -1,7 +1,6 @@
-body, html {
+#root, body {
   background-color:  #A8D6EB; 
 }
-
 .titleBox {
   justify-content: center;
   align-items: center;
