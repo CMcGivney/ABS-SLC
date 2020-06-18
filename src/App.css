@@ -120,34 +120,23 @@ a.email:hover {
   align-items: center;
   text-align: center;
   background-color: #696969;
-  display: grid;
+  display: flex;
+  flex-flow: column nowrap;
   padding: 1em;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "title" "address" 
-                       "phone"  "email"
-                       "social" "power"
 }
 
 .mainFooter {
-  font-family: 'Roboto Slab', serif;
-  grid-area: title;
-  margin: 0;
+  font-family: 'Permanent Marker', serif;
 }
 .phoneNum {
   font-family: 'Roboto Slab', serif;
   padding: .5em;
-  /* font-size: 2em; */
-  grid-area: phone;
 }
 .poweredBy {
   font-family: 'Roboto Slab', serif;
-  /* font-size: 2em; */
-  grid-area: power;
   padding: .5em;
 }
 .bizAddress{
-  grid-area: address;
   padding: .5em;
 }
 /*Contact */
