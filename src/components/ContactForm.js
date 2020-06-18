@@ -74,26 +74,6 @@ handleSubmit = (e) => {
          required
          />
          </Form.Group>
-         <Form.Group>
-        {/* <Form.Input
-         name="dates"
-         label="Date of Event"
-         type="date"
-         value={this.state.date}
-         onChange={this.handleChange}
-         required
-         >
-         </Form.Input> */}
-        {/* <Form.Input
-         name="numGuests"
-         label="Number of Guests"
-         type="number"
-         value={this.state.numGuests}
-         onChange={this.handleChange}
-         required
-         >
-         </Form.Input> */}
-         </Form.Group>
          <Form.TextArea
          placeholder= "Message"
          label="Message"

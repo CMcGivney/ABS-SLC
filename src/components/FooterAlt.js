@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header,} from 'semantic-ui-react'
+import {Header, Icon} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
 
 class Footer extends React.Component {
@@ -15,7 +15,7 @@ class Footer extends React.Component {
                Stan Battle
                <p style={{fontSize:"1rem"}}>Regional Sales Manager</p>
             </Header.Content>
-          <Header.Content as="h3">phone:<a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></Header.Content>
+          <Header.Content as="h4"><Icon name="phone"/><a className="email emailBox" href="tel:+1-858-531-6728">1-(858)-531-6728</a></Header.Content>
            </div>
           <div className='bizAddress'>
             <Header.Content>
@@ -23,12 +23,15 @@ class Footer extends React.Component {
             </Header.Content>
            </div>
           <div className='emailBox'>
-             <h4>email:  <a className="email"  target="_blank" rel="noopener noreferrer" href="mailto:Stan@absseafood.com?subject=Mailed from Website">Stan@ABSSeafood.com</a></h4>  
+             <Header.Content as="h4"><Icon name="mail"/><a className="email"  target="_blank" rel="noopener noreferrer" href="mailto:Stan@absseafood.com?subject=Mailed from Website">Stan@ABSSeafood.com</a></Header.Content>  
          </div>
           <div >
             <Header.Content>
              <SocialFollow/>
             </Header.Content>
+          </div>
+          <div>
+            © 2018 ABS Seafood SLC, Utah, all rights reserved.
           </div>
           {/* <div className="poweredBy">
             <Header.Content>
