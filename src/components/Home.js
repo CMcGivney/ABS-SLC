@@ -1,7 +1,9 @@
 import React from 'react'
-import {Header, Image} from 'semantic-ui-react'
+import {Header, Image, Button} from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
+import PhishBox from '../images/packaging-scaled.jpg'
 import { Parallax,} from 'react-parallax';
 import SLCMTNS from "../images/salt-lake-city2.jpg"
 
@@ -63,6 +65,37 @@ const Home = () => (
          src={Slab}
          />
        </div>
+      </div>
+      <Header.Content as="h2" className="specialBanner">ABS Seafood SLC Specials</Header.Content>
+      <div className='homeContent'>
+      <div className='mainImage-1'>
+        <Image
+         fluid
+         src={PhishBox}
+         />
+       </div>
+       <div className="mainText">
+        <Header.Content as="h1" >
+         <a  
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
+          >
+           Seasonal Fish Box 
+          </a>
+        </Header.Content>
+        <Header.Content as="h5" >2 – 6oz <a target="_blank" rel="noopener noreferrer" href="https://www.kvaroyarctic.com/salmon">Kvaroy Premium Arctic Salmon</a> (Hands down the best Salmon I have ever tasted)</Header.Content>
+        <Header.Content as="h5" >2 – 6oz Southern California Halibut (Hand line-caught off the coast of Southern California and Baja Mexico)</Header.Content>
+        <Header.Content as="h5" >1lbs 16/20 Shrimp (cleaned with tails on)</Header.Content>
+        <Header.Content as="h5" >$52.00</Header.Content>
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc">
+         <Button>Order Now</Button>
+        </a>
+        
+       </div>
+    
       </div>
    </div>
   

@@ -6,6 +6,7 @@ import Inventory from './components/Inventory'
 import FAQ from './components/FAQ'
 import NavBar from './components/NavBar'
 import Footer from './components/FooterAlt'
+import NoMatch from './components/NoMatch'
 import {Container} from 'semantic-ui-react'
 import ScrollToTop from './components/scrollToTop'
 import './App.css'
@@ -21,6 +22,7 @@ function App() {
      <Route exact path='/Contact' component={Contact} />
      <Route exact path='/Products' component={Inventory} />
      <Route exact path='/FAQ' component={FAQ} />
+     <Route component={NoMatch} />
      </Switch>
     </Container>
     <Footer/>
