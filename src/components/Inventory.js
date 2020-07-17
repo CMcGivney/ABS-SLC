@@ -22,15 +22,17 @@ import Shrimp90 from '../images/shrimp90.jpeg'
 import Scallop from '../images/seascallop.jpg'
 import LobsterTail from '../images/lobsterTailsFrozen.jpeg'
 import Unagi from '../images/unagi.jpeg'
+import PhishBox from '../images/packaging-scaled.jpg'
 
 
 class Fresh { 
-  constructor(image, image_alt, type, description,) {
+  constructor(image, image_alt, type, description, price, link) {
    this.image = image;
    this.image_alt = image_alt;
    this.type = type;
    this.description = description;
-   
+   this.price = price;
+   this.link = link;
  }
 }
 class Frozen { 
@@ -48,9 +50,12 @@ let seafoodFrozen= [];
 let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
    halibut, stripedBass, mahiMahi, manilaClams, pEIMussel,
     shrimp15, shrimp20, shrimp90, lobster, hamachi, albacore,
-    yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi
+    yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi, phishBox
 
 //Fresh Products
+    phishBox = new Fresh(PhishBox, "Box of Fish", "ABS Seafood SLC Dinner Box", "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   2 – 6oz Southern California Halibut (Hand line-caught off the coast of Southern California and Baja Mexico), and 1lb 16/20 Shrimp (cleaned with tails on)", "$52.00", "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc")
+    seafoodFresh.push(phishBox)
+
     cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Rich Flavor, Dense Texture, Flaky, Buttery and Delicious",)
     seafoodFresh.push(cod)
 
@@ -139,12 +144,17 @@ const Inventory = () => (
        <Image
          src={seafood.image}
          alt={seafood.image_alt}
+         href={seafood.link}
+         target="_blank"
+         rel="noopener noreferrer"
          className="imageProduct"
          fluid
         />
        <Card.Content>
         <Card.Header as='h2' className="cardHead">{seafood.type}</Card.Header>
         <Card.Meta className="cardMeta">{seafood.description}</Card.Meta>
+        <Card.Meta style={{textAlign:"center"}}>{seafood.price}</Card.Meta>
+       
        </Card.Content>    
       </Card>
       )

@@ -66,9 +66,19 @@ const Home = () => (
          />
        </div>
       </div>
-      <Header.Content as="h2" className="specialBanner">ABS Seafood SLC Specials</Header.Content>
+       <div className="specialBanner">
+        <Header.Content as="h2" className="bannerHead" >ABS Seafood SLC Specials</Header.Content>
+        <Header.Content as="h4" className="bannerMeta">* Now Available Online at 
+          <a
+           target="_blank"
+           rel="noopener noreferrer"
+           href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
+          > ComComKitchen.com 
+          </a> *
+         </Header.Content>
+       </div>
       <div className='homeContent'>
-      <div className='mainImage-1'>
+       <div className='mainImage-1'>
         <Image
          fluid
          src={PhishBox}
@@ -81,7 +91,7 @@ const Home = () => (
            rel="noopener noreferrer"
            href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
           >
-           Seasonal Fish Box 
+           Seafood Dinner Box 
           </a>
         </Header.Content>
         <Header.Content as="h5" >2 – 6oz <a target="_blank" rel="noopener noreferrer" href="https://www.kvaroyarctic.com/salmon">Kvaroy Premium Arctic Salmon</a> (Hands down the best Salmon I have ever tasted)</Header.Content>

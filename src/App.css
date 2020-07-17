@@ -58,13 +58,21 @@ text-align: center;
 .specialBanner {
   width: 100%;
   height: 10rem;
-  font-family: 'Permanent Marker', cursive;
-  color: white;
   background-color: black;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+}
+.bannerHead {
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+.bannerMeta {
+  margin: 0;
+  
 }
 /* styles for the social media icons */
 .social-container {
