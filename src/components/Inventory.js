@@ -16,13 +16,14 @@ import MahiMahi from '../images/MahiFillet.jpg'
 import Squid from '../images/montereysquid.jpg'
 import Albacore from '../images/albacore.jpeg'
 import Yellowfin from '../images/yellowfinTuna.jpg'
-import Halibut from '../images/CaliHalibut.jpg'
+import Halibut from '../images/Halibut-cropped.jpg'
 import Shrimp20 from '../images/shrimp20.jpeg'
 import Shrimp90 from '../images/shrimp90.jpeg'
 import Scallop from '../images/seascallop.jpg'
 import LobsterTail from '../images/lobsterTailsFrozen.jpeg'
 import Unagi from '../images/unagi.jpeg'
 import PhishBox from '../images/packaging-scaled.jpg'
+import Kvaroy from '../images/kvaroySalmon.jpeg'
 
 
 class Fresh { 
@@ -50,11 +51,14 @@ let seafoodFrozen= [];
 let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
    halibut, stripedBass, mahiMahi, manilaClams, pEIMussel,
     shrimp15, shrimp20, shrimp90, lobster, hamachi, albacore,
-    yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi, phishBox
+    yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi, phishBox, kvaroy
 
 //Fresh Products
     phishBox = new Fresh(PhishBox, "Box of Fish", "ABS Seafood SLC Dinner Box", "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   2 – 6oz Southern California Halibut (Hand line-caught off the coast of Southern California and Baja Mexico), and 1lb 16/20 Shrimp (cleaned with tails on)", "$52.00", "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc")
     seafoodFresh.push(phishBox)
+
+    kvaroy = new Fresh(Kvaroy, "Kvaroy Premium Arctic Salmon", "Kvaroy Premium Arctic Salmon", "Kvaroy Premium Arctic Salmon is mild, easy to prepare, and won’t dry out. The scales and skin cook up crisp and fresh. (Hands down the best Salmon we have ever tasted)", "", "https://www.kvaroyarctic.com/salmon")
+    seafoodFresh.push(kvaroy)
 
     cod = new Fresh(BlackCod, "California Black Cod Fillet", "California Black Cod Fillet", "Rich Flavor, Dense Texture, Flaky, Buttery and Delicious",)
     seafoodFresh.push(cod)
