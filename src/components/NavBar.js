@@ -6,7 +6,6 @@ import Logo from '../images/ABS-SEAFOOD-SLC-logo.png'
 
 const navStyles = {
   padding: '1rem',
-  
 }
 
 class Navbar extends React.Component {
