@@ -1,7 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: Google
+User-agent: Googlebot
 allow: /
 
 User-agent: *
-allow: /
+Disallow: /Contact
+Disallow: /Twitter
 
