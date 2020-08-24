@@ -54,7 +54,7 @@ let cod, sole, snapper, atlSalmon, tuna, steelhead, islesSalmon,
     yellowfinTuna, mahiFrzn, scallop, japanScallop, squid, unagi, phishBox, kvaroy
 
 //Fresh Products
-    phishBox = new Fresh(PhishBox, "Box of Fish", "ABS Seafood SLC Dinner Box", "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   2 – 6oz Southern California Halibut (Hand line-caught off the coast of Southern California and Baja Mexico), and 1lb 16/20 Shrimp (cleaned with tails on)", "$52.00", "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc")
+    phishBox = new Fresh(PhishBox, "Box of Fish", "ABS Seafood SLC Dinner Box", "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   4 - Whole, head-off butterflied Branzino portions, and 1lb Jonah Crab Claws ", "$60.00", "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc")
     seafoodFresh.push(phishBox)
 
     kvaroy = new Fresh(Kvaroy, "Kvaroy Premium Arctic Salmon", "Kvaroy Premium Arctic Salmon", "Kvaroy Premium Arctic Salmon is mild, easy to prepare, and won’t dry out. The scales and skin cook up crisp and fresh. (Hands down the best Salmon we have ever tasted)", "", "https://www.kvaroyarctic.com/salmon")
