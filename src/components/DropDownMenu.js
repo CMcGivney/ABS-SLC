@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Dropdown, Image, Container} from 'semantic-ui-react'
-import Logo from '../images/ABS-White-NoBackground.png'
+import Logo from '../images/ABS-White-Logo.png'
 
 
 class DropDownMenu extends React.Component {
