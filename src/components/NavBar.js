@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
 import DropDownMenu from './DropDownMenu.js'
-import Logo from '../images/ABS-SEAFOOD-SLC-logo.png'
+import Logo from '../images/ABS-Black-NoBackground.png'
 
 const navStyles = {
   padding: '1rem',
