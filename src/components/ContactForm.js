@@ -9,6 +9,7 @@ class ContactForm extends React.Component {
   state = {
            name: '',
            email: '',
+           phone: '',
            message: '',
   }
 
@@ -17,6 +18,7 @@ class ContactForm extends React.Component {
     this.setState({
       name: '',
       email: '',
+      phone: '',
       message: '',
     })
     alert("Message Sent")
@@ -31,13 +33,14 @@ handleChange = (e) => {
 
 handleSubmit = (e) => {
   e.preventDefault();
- const {name, email, message} = this.state
+ const {name, email, phone, message} = this.state
 
  let templateParams = {
   from_name: name,
   from_email: email,
   to_name: 'Stan Battle',
   message_html: message,
+  phone_num: phone,
  }
 
  emailjs.send('stanbattle15_gmail_com', "template_BP9yPyTn", templateParams, "user_JinG5bR4RRbrs0CgSIRDD"
@@ -71,6 +74,16 @@ handleSubmit = (e) => {
          name="email"
          onChange={this.handleChange}
          value={this.state.email}
+         required
+         />
+         <Form.Input
+         placeholder= "(###)-###-####"
+         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+         type="tel"
+         label="phone"
+         name="phone"
+         onChange={this.handleChange}
+         value={this.state.phone}
          required
          />
          </Form.Group>
