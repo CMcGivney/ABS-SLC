@@ -77,8 +77,8 @@ handleSubmit = (e) => {
          required
          />
          <Form.Input
-         placeholder= "(###)-###-####"
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+         placeholder= "###-###-####"
+         pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
          type="tel"
          label="phone"
          name="phone"
