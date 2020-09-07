@@ -5,15 +5,14 @@ import Special from './Specials.js'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
 import SLCMTNS from "../images/salt-lake-city2.jpg"
+import LogoWhite from "../images/ABS-Logo.png"
 
 const insideStyles = {
-   background: "#A8D6EB",
    padding: 20,
    position: "absolute",
-   top: "55%",
+   top: "45%",
    left: "50%",
    transform: "translate(-50%,-50%)",
-   borderRadius: "50%",
    height: '20rem',
    display: 'flex',
    flexDirection: 'column',
@@ -29,10 +28,12 @@ const Home = () => (
       strength={-300}
        >
         <div className="titleBox" >
-         <div style={insideStyles}>
-          <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>ABS Seafood</Header.Content>
-          <Header.Content as="h2" className="motto" style={{margin: ".4em 0 0 0"}}>Salt Lake City, Utah</Header.Content>
-         </div>
+        <Image
+         src= {LogoWhite}
+         alt= "Sip & Stir Logo"
+         size= "big"
+         style={insideStyles}
+         />
         </div>
    </Parallax>
 
