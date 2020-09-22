@@ -5,7 +5,7 @@ import Special from './Specials.js'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
 import SLCMTNS from "../images/salt-lake-city2.jpg"
-import LogoWhite from "../images/ABS-Logo.png"
+import LogoWhite from "../images/ABS- Logo.png"
 
 const insideStyles = {
    padding: 20,
