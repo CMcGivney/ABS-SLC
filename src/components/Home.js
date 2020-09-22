@@ -4,11 +4,10 @@ import {Header, Image,} from 'semantic-ui-react'
 import Special from './Specials.js'
 import Tuna from '../images/tunaOcean.jpg'
 import Slab from '../images/TunaSlab.jpeg'
-import SLCMTNS from "../images/salt-lake-city2.jpg"
-import LogoWhite from "../images/ABS- Logo.png"
+// import SLCMTNS from "../images/salt-lake-city2.jpg"
+import LogoWhite from "../images/ABS-Logo.png"
 
 const insideStyles = {
-   padding: 20,
    position: "absolute",
    top: "45%",
    left: "50%",
@@ -23,9 +22,11 @@ const Home = () => (
  <>
  
     <Parallax
-      bgImage={SLCMTNS}
+      bgImage="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600789204/absSeafood/utah-1953477_mfekai.jpg"
       bgImageAlt="SLC Mountains covered in snow"
-      strength={-300}
+      strength={-100}
+      alt="David Mark Image"
+      href="https://pixabay.com/photos/utah-panorama-autumn-fall-colorful-1953477/"
        >
         <div className="titleBox" >
         <Image
