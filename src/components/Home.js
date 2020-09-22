@@ -2,10 +2,6 @@ import React from 'react'
 import { Parallax,} from 'react-parallax';
 import {Header, Image,} from 'semantic-ui-react'
 import Special from './Specials.js'
-import Tuna from '../images/tunaOcean.jpg'
-import Slab from '../images/TunaSlab.jpeg'
-// import SLCMTNS from "../images/salt-lake-city2.jpg"
-import LogoWhite from "../images/ABS-Logo.png"
 
 const insideStyles = {
    position: "absolute",
@@ -22,7 +18,7 @@ const Home = () => (
  <>
  
     <Parallax
-      bgImage="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600789204/absSeafood/utah-1953477_mfekai.jpg"
+      bgImage="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto,w_3888/v1600789204/absSeafood/utah-1953477_mfekai.jpg"
       bgImageAlt="SLC Mountains covered in snow"
       strength={-100}
       alt="David Mark Image"
@@ -30,7 +26,7 @@ const Home = () => (
        >
         <div className="titleBox" >
         <Image
-         src= {LogoWhite}
+         src= "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600792863/absSeafood/ABS-Logo_nqz2kc.png"
          alt= "Sip & Stir Logo"
          size= "big"
          style={insideStyles}
@@ -50,7 +46,8 @@ const Home = () => (
        <div className='mainImage-1'>
         <Image
          fluid
-         src={Tuna}
+         src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797060/absSeafood/tunaOcean_ifcmtl.jpg"
+         alt="large tuna being caught on single fishing line"
          />
        </div>
        <div className="mainText">
@@ -66,7 +63,8 @@ const Home = () => (
        <div className='mainImage-1'>
         <Image
          fluid
-         src={Slab}
+         src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797021/absSeafood/TunaSlab_ij77ne.jpg"
+         alt="tuna being processed in kitchen setting"
          />
        </div>
       </div>

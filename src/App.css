@@ -55,6 +55,13 @@
   padding: 1rem 1rem;
   text-align: center
 }
+a.aContent {
+  color: black;
+  text-decoration: underline
+}
+a.aContent:hover {
+  color: darkgoldenrod;
+}
 .specialBanner {
   width: 100%;
   height: 10rem;
@@ -86,7 +93,7 @@ a.social {
  
  a.social:hover {
  transform: translateY(-2px); 
- color: chartreuse;
+ color: darkgoldenrod;
  }
  
  a.facebook {
@@ -116,7 +123,7 @@ a.email {
 }
 
 a.email:hover {
-  color: lightskyblue;
+  color: darkgoldenrod;
 }
 /*Events Layout style*/
 .twitter {
