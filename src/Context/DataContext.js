@@ -79,7 +79,7 @@ const DataProvider = ({ children }) => {
   phishBox = new Fresh(
     PhishBox,
     "Box of Fish",
-    "ABS Seafood SLC Dinner Box",
+    <a href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc">ABS Seafood SLC Dinner Box</a>,
     "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   4 - Whole, head-off butterflied Branzino portions, and 1lb Jonah Crab Claws ",
     "$60.00",
     "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
@@ -89,7 +89,7 @@ const DataProvider = ({ children }) => {
   kvaroy = new Fresh(
     Kvaroy,
     "Kvaroy Premium Arctic Salmon",
-    "Kvaroy Premium Arctic Salmon",
+    <a href="https://www.kvaroyarctic.com/salmon">Kvaroy Premium Arctic Salmon</a>,
     "Kvaroy Premium Arctic Salmon is mild, easy to prepare, and won’t dry out. The scales and skin cook up crisp and fresh. (Hands down the best Salmon we have ever tasted)",
     "",
     "https://www.kvaroyarctic.com/salmon"
