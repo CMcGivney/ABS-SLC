@@ -26,7 +26,8 @@ class DropDownMenu extends React.Component {
             <Image 
               size='tiny' 
               src={Logo} 
-              style={{ padding: '0', margin: ".5em" }} />
+              style={{ padding: '0', margin: ".5em" }}
+              alt="white Abs Seafood logo" />
              </Menu.Item>
              </Link>
               <Dropdown 
