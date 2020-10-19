@@ -1,15 +1,24 @@
 import React from "react";
-import { Header, Image, Button } from "semantic-ui-react";
-import PhishBox from "../images/packaging-scaled.jpg";
+import { Header, Button, Card, } from "semantic-ui-react";
+
+const specialDisplay = {
+  display: "flex",
+  flexFlow: "column nowrap",
+  margin: "1rem 1rem",
+  width: "100%",
+  justifyContent: "center"
+}
 
 const Specials = () => (
   <>
-    <div className="specialBanner">
+   <div className="specialBanner"></div>
+    <div style={specialDisplay}>
+     <div style={{'textAlign': "center", }}>      
       <Header.Content as="h2" className="bannerHead">
         ABS Seafood SLC Specials
-      </Header.Content>
-      <Header.Content as="h4" className="bannerMeta">
-        * Now Available Online at
+       </Header.Content>
+       <Header.Content as="h4" className="bannerMeta">
+        * Order Online at
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -19,24 +28,11 @@ const Specials = () => (
           ComComKitchen.com
         </a>{" "}
         *
-      </Header.Content>
-    </div>
-    <div className="homeContent">
-      <div className="mainImage-1">
-        <Image fluid src={PhishBox} alt="special fish box" />
+       </Header.Content>
       </div>
-      <div className="mainText">
-        <Header.Content as="h1">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
-            className="aContent"
-          >
-            Seafood Dinner Box
-          </a>
-        </Header.Content>
-        <Header.Content as="h5">
+
+      <Card className="mainText" raised>
+        <Card.Content as="h5">
           2 – 6oz{" "}
           <a
             target="_blank"
@@ -47,21 +43,21 @@ const Specials = () => (
             Kvaroy Premium Arctic Salmon
           </a>{" "}
           (Hands down the best Salmon we have ever tasted)
-        </Header.Content>
-        <Header.Content as="h5">
+        </Card.Content>
+        <Card.Content as="h5">
           4 - Whole, head-off, butterflied, Branzino portions
-        </Header.Content>
-        <Header.Content as="h5">1lbs Jonah Crab Claws</Header.Content>
-        <Header.Content as="h5">$60.00</Header.Content>
-        <Header.Content as="h6">*availability may be limited*</Header.Content>
+        </Card.Content>
+        <Card.Content as="h5">1lbs Jonah Crab Claws</Card.Content>
+        <Card.Content as="h5">$60.00</Card.Content>
+        <Card.Header as="h6" style={{"fontStyle": "italic"}}>* items & availability subject to change *</Card.Header>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
         >
-          <Button>Order Now</Button>
+          <Button style={{margin: ".5rem"}}>Check Availability</Button>
         </a>
-      </div>
+      </Card>
     </div>
   </>
 );

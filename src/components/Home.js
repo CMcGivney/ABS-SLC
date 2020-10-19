@@ -1,7 +1,7 @@
 import React from "react";
 import { SimpleImg } from 'react-simple-img';
 import { Parallax } from "react-parallax";
-import { Header, Image } from "semantic-ui-react";
+import { Header, Image} from "semantic-ui-react";
 import Special from "./Specials.js";
 
 const insideStyles = {
@@ -9,8 +9,8 @@ const insideStyles = {
   top: "45%",
   left: "50%",
   transform: "translate(-50%,-50%)",
-  height: "20rem",
   display: "flex",
+  maxHeight: "40vh",
   flexDirection: "column",
   justifyContent: "center",
 };
@@ -24,10 +24,10 @@ const Home = () => (
       href="https://pixabay.com/photos/utah-panorama-autumn-fall-colorful-1953477/"
     >
       <div className="titleBox">
-        <SimpleImg
+        <Image
           src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600792863/absSeafood/ABS-Logo_nqz2kc.png"
           alt="Sip & Stir Logo"
-          size="big"
+          sizes="(max-width: 320px, max-height: 200px) 280px"
           style={insideStyles}
         />
       </div>

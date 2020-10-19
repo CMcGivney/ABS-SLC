@@ -11,7 +11,7 @@ const InventoryComponent = () => {
       <div className="inventoryContainer">
         <div className="faqHead">
           <Header.Content as="h1">Retail Products</Header.Content>
-          <Header.Content as="h5">
+          <Header.Content as="h5" style={{"fontStyle":"italic"}}>
             "Contact your regional sales rep. for pricing, availability and
             wholesale products"
           </Header.Content>

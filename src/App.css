@@ -48,6 +48,7 @@
   width: 50%;
   justify-self: center;
   padding: 1rem 1rem;
+  text-align: center;
 }
 .mainText {
   width: 50%;
@@ -57,14 +58,15 @@
 }
 a.aContent {
   color: black;
-  text-decoration: underline
+  text-decoration: underline;
+  
 }
 a.aContent:hover {
   color: darkgoldenrod;
 }
 .specialBanner {
   width: 100%;
-  height: 10rem;
+  height: 2rem;
   background-color: black;
   display: flex;
   flex-flow: column nowrap;
@@ -76,6 +78,7 @@ a.aContent:hover {
 .bannerHead {
   font-family: 'Permanent Marker', cursive;
   margin: 0;
+  font-style: italic;
 }
 .bannerMeta {
   margin: 0;
@@ -114,8 +117,6 @@ a.social {
   font-size: 1.2em;
   font-family: 'Roboto Slab', serif;
   padding: .5em;
-  
-
 }
 
 a.email {
