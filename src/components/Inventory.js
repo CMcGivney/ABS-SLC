@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { Header, Card, Image } from "semantic-ui-react";
+import { SimpleImg } from 'react-simple-img';
+import { Header, Card,} from "semantic-ui-react";
 import { DataContext, DataProvider } from "../Context/DataContext";
 
 const InventoryComponent = () => {
@@ -21,14 +22,14 @@ const InventoryComponent = () => {
         <Card.Group className="cardContainer" stackable>
           {seafoodFresh.map((seafood, index) => (
             <Card className="faqCard" key={index}>
-              <Image
+              <SimpleImg
                 src={seafood.image}
                 alt={seafood.image_alt}
                 href={seafood.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="imageProduct"
-                fluid
+                fluid= "true"
               />
               <Card.Content>
                 <Card.Header as="h2" className="cardHead">
@@ -51,11 +52,11 @@ const InventoryComponent = () => {
         <Card.Group className="cardContainer" stackable>
           {seafoodFrozen.map((frozen, index) => (
             <Card className="faqCard" key={index}>
-              <Image
+              <SimpleImg
                 src={frozen.image}
                 alt={frozen.image_alt}
                 className="imageProduct"
-                fluid
+                fluid = "true"
               />
               <Card.Content>
                 <Card.Header as="h2" className="cardHead">
