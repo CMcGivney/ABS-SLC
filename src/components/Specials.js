@@ -53,6 +53,7 @@ const Specials = () => (
         </Header.Content>
         <Header.Content as="h5">1lbs Jonah Crab Claws</Header.Content>
         <Header.Content as="h5">$60.00</Header.Content>
+        <Header.Content as="h6">*availability may be limited*</Header.Content>
         <a
           target="_blank"
           rel="noopener noreferrer"
