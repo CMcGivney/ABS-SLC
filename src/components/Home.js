@@ -1,4 +1,5 @@
 import React from "react";
+import { SimpleImg } from 'react-simple-img';
 import { Parallax } from "react-parallax";
 import { Header, Image } from "semantic-ui-react";
 import Special from "./Specials.js";
@@ -23,7 +24,7 @@ const Home = () => (
       href="https://pixabay.com/photos/utah-panorama-autumn-fall-colorful-1953477/"
     >
       <div className="titleBox">
-        <Image
+        <SimpleImg
           src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600792863/absSeafood/ABS-Logo_nqz2kc.png"
           alt="Sip & Stir Logo"
           size="big"
@@ -44,8 +45,8 @@ const Home = () => (
       </div>
       <div className="homeContent">
         <div className="mainImage-1">
-          <Image
-            fluid
+          <SimpleImg
+            fluid= "true"
             src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797060/absSeafood/tunaOcean_ifcmtl.jpg"
             alt="large tuna being caught on single fishing line"
           />
@@ -73,8 +74,8 @@ const Home = () => (
           </Header.Content>
         </div>
         <div className="mainImage-1">
-          <Image
-            fluid
+          <SimpleImg
+            fluid= "true"
             src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797021/absSeafood/TunaSlab_ij77ne.jpg"
             alt="tuna being processed in kitchen setting"
           />
