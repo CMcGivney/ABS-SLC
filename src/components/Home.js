@@ -2,7 +2,7 @@ import React from "react";
 import { SimpleImg } from 'react-simple-img';
 import { Parallax } from "react-parallax";
 import { Header, Image} from "semantic-ui-react";
-import Special from "./Specials.js";
+// import Special from "./Specials.js";
 
 const insideStyles = {
   position: "absolute",
@@ -34,7 +34,7 @@ const Home = () => (
     </Parallax>
 
     <div className="homeContentGrid ">
-      <Special />
+      {/* <Special /> */}
 
       <div className="missionStatement">
         <Header.Content as="h2" style={{ padding: "1rem" }}>

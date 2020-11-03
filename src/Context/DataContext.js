@@ -21,8 +21,8 @@ import Shrimp90 from "../images/shrimp90.jpeg";
 import Scallop from "../images/seascallop.jpg";
 import LobsterTail from "../images/lobsterTailsFrozen.jpeg";
 import Unagi from "../images/unagi.jpeg";
-import PhishBox from "../images/packaging-scaled.jpg";
-import Kvaroy from "../images/kvaroySalmon.jpeg";
+// import PhishBox from "../images/packaging-scaled.jpg";
+// import Kvaroy from "../images/kvaroySalmon.jpeg";
 
 const DataContext = createContext();
 
@@ -71,30 +71,29 @@ const DataProvider = ({ children }) => {
     scallop,
     japanScallop,
     squid,
-    unagi,
-    phishBox,
-    kvaroy;
+    unagi
+   
 
   //Fresh Products
-  phishBox = new Fresh(
-    PhishBox,
-    "Box of Fish",
-    <a href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc">ABS Seafood SLC Dinner Box</a>,
-    "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   4 - Whole, head-off butterflied Branzino portions, and 1lb Jonah Crab Claws ",
-    "$60.00",
-    "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
-  );
-  seafoodFresh.push(phishBox);
+  // phishBox = new Fresh(
+  //   PhishBox,
+  //   "Box of Fish",
+  //   <a href="https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc">ABS Seafood SLC Dinner Box</a>,
+  //   "2 – 6oz Kvaroy Premium Arctic Salmon (Hands down the best Salmon we have ever tasted),   4 - Whole, head-off butterflied Branzino portions, and 1lb Jonah Crab Claws ",
+  //   "$60.00",
+  //   "https://comcomkitchen-ghostsushi.square.site/abs-fishbox-slc"
+  // );
+  // seafoodFresh.push(phishBox);
 
-  kvaroy = new Fresh(
-    Kvaroy,
-    "Kvaroy Premium Arctic Salmon",
-    <a href="https://www.kvaroyarctic.com/salmon">Kvaroy Premium Arctic Salmon</a>,
-    "Kvaroy Premium Arctic Salmon is mild, easy to prepare, and won’t dry out. The scales and skin cook up crisp and fresh. (Hands down the best Salmon we have ever tasted)",
-    "",
-    "https://www.kvaroyarctic.com/salmon"
-  );
-  seafoodFresh.push(kvaroy);
+  // kvaroy = new Fresh(
+  //   Kvaroy,
+  //   "Kvaroy Premium Arctic Salmon",
+  //   <a href="https://www.kvaroyarctic.com/salmon">Kvaroy Premium Arctic Salmon</a>,
+  //   "Kvaroy Premium Arctic Salmon is mild, easy to prepare, and won’t dry out. The scales and skin cook up crisp and fresh. (Hands down the best Salmon we have ever tasted)",
+  //   "",
+  //   "https://www.kvaroyarctic.com/salmon"
+  // );
+  // seafoodFresh.push(kvaroy);
 
   cod = new Fresh(
     BlackCod,
