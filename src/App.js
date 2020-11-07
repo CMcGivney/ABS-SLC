@@ -33,8 +33,6 @@ function App() {
       value: 1
   }
   });
-
-function App() {
   return (
   <>
    
