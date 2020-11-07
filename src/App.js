@@ -7,9 +7,32 @@ import FAQ from './components/FAQ'
 import NavBar from './components/NavBar'
 import Footer from './components/FooterAlt'
 import NoMatch from './components/NoMatch'
-// import {Container} from 'semantic-ui-react'
 import ScrollToTop from './components/scrollToTop'
 import './App.css'
+import TagManager from 'react-gtm-module'
+import ReactGA from 'react-ga'
+
+function initializeReactGA() {
+  ReactGA.initialize('G-LSC0KJ6YGL');
+  ReactGA.pageview('/homepage');
+}
+
+const tagManagerArgs = {
+  gtmId: 'GTM-MPJMMFW'
+}
+TagManager.initialize(tagManagerArgs)
+
+
+function App() {
+  window.dataLayer.push({
+    event: 'event',
+    eventProps: {
+      category: "pageview",
+      action: "getQuote",
+      label: "button push",
+      value: 1
+  }
+  });
 
 function App() {
   return (

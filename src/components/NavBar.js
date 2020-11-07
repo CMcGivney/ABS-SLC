@@ -6,14 +6,11 @@ import UseWindowSize from "../hooks/UseWindowSize.js"
 
 const Navbar = () => {
   const size = UseWindowSize();
-
-     if (size.width <= 650) {
-    return <DropDownMenu/>
-     }
-    else {
-    return <NavBarContent /> 
-    }
   
+  return (
+     (size.width <= 650) ? <DropDownMenu/> : <NavBarContent /> 
+    
+    ) 
 }
 
 

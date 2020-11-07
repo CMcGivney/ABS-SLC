@@ -1,29 +1,25 @@
 import React from "react";
-import { SimpleImg } from 'react-simple-img';
-import { Header,} from "semantic-ui-react";
-import ParaImage from "./Parallax.js"
+import { SimpleImg } from "react-simple-img";
+import { Header } from "semantic-ui-react";
+import ParaImage from "./Parallax.js";
 // import Special from "./Specials.js";
-
-
 
 const Home = () => (
   <>
- <ParaImage />
+    <ParaImage />
 
     <div className="homeContentGrid ">
-      {/* <Special /> */}
-
-      <div className="missionStatement">
+      <section className="missionStatement">
         <Header.Content as="h2" style={{ padding: "1rem" }}>
           "Bringing the quality that is expected in the finest restaurants in
           the Bay Area, here to Utah."
         </Header.Content>
         <Header.Content as="h4">~ Our Promise & Commitment ~</Header.Content>
-      </div>
+      </section>
       <div className="homeContent">
         <div className="mainImage-1">
           <SimpleImg
-            fluid= "true"
+            fluid="true"
             src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797060/absSeafood/tunaOcean_ifcmtl.jpg"
             alt="large tuna being caught on single fishing line"
           />
@@ -52,7 +48,7 @@ const Home = () => (
         </div>
         <div className="mainImage-1">
           <SimpleImg
-            fluid= "true"
+            fluid="true"
             src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto/v1600797021/absSeafood/TunaSlab_ij77ne.jpg"
             alt="tuna being processed in kitchen setting"
           />
