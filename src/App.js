@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch, } from "react-router-dom";
+import {Route, Switch, useHistory } from "react-router-dom";
 import Home from './components/Home'
 import Contact from './components/Contact'
 import Inventory from './components/Inventory'
@@ -12,18 +12,15 @@ import './App.css'
 import TagManager from 'react-gtm-module'
 import ReactGA from 'react-ga'
 
-function initializeReactGA() {
-  ReactGA.initialize('G-LSC0KJ6YGL');
-  ReactGA.pageview('/homepage');
-}
-
-const tagManagerArgs = {
-  gtmId: 'GTM-MPJMMFW'
-}
-TagManager.initialize(tagManagerArgs)
-
 
 function App() {
+  ReactGA.initialize('G-LSC0KJ6YGL');
+
+  // const tagManagerArgs = {
+  //   gtmId: 'GTM-MPJMMFW'
+  // }
+  // TagManager.initialize(tagManagerArgs)
+  
   window.dataLayer.push({
     event: 'event',
     eventProps: {
@@ -33,6 +30,14 @@ function App() {
       value: 1
   }
   });
+  const history = useHistory();
+
+  history.listen((location) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname)
+   }
+  );
+  console.log(history.location.pathname)
   return (
   <>
    
