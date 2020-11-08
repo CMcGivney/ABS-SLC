@@ -20,15 +20,15 @@ function App() {
   // }
   // TagManager.initialize(tagManagerArgs)
 
-  window.dataLayer.push({
-    event: "event",
-    eventProps: {
-      category: "pageview",
-      action: "getQuote",
-      label: "button push",
-      value: 1,
-    },
-  });
+  // window.dataLayer.push({
+  //   event: "event",
+  //   eventProps: {
+  //     category: "pageview",
+  //     action: "getQuote",
+  //     label: "button push",
+  //     value: 1,
+  //   },
+  // });
   const history = useHistory();
 
   history.listen((location) => {
