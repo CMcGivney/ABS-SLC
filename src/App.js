@@ -9,7 +9,7 @@ import Footer from './components/FooterAlt'
 import NoMatch from './components/NoMatch'
 import ScrollToTop from './components/scrollToTop'
 import './App.css'
-import TagManager from 'react-gtm-module'
+// import TagManager from 'react-gtm-module'
 import ReactGA from 'react-ga'
 
 
