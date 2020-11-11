@@ -1,7 +1,7 @@
 import React from "react";
 import { SimpleImg } from "react-simple-img";
 import { Header } from "semantic-ui-react";
-import ParaImage from "./Parallax.js";
+import ParaImage from "../components/Parallax.js";
 // import Special from "./Specials.js";
 
 const Home = () => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Header,} from 'semantic-ui-react'
-import ContactForm from './ContactForm.js'
+import ContactForm from '../components/ContactForm.js'
 
 const Contact = () => (
   <>

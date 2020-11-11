@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Switch, useHistory } from "react-router-dom";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Inventory from "./components/Inventory";
-import FAQ from "./components/FAQ";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Inventory from "./Pages/Inventory";
+import FAQ from "./Pages/FAQ";
 import NavBar from "./components/NavBar";
 import Footer from "./components/FooterAlt";
-import NoMatch from "./components/NoMatch";
+import NoMatch from "./Pages/NoMatch";
 import ScrollToTop from "./components/scrollToTop";
 import "./App.css";
 // import TagManager from 'react-gtm-module'
