@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Header, Card } from "semantic-ui-react";
+import {FAQContext, FAQProvider} from  "../Context/FAQContext.js"
 
-const Faq = () => (
+const FaqComponent = () => {
+  const {faqs} = useContext(FAQContext);
+  return (
   <>
     <div className="faqContainer">
       <div className="faqHead">
@@ -10,47 +13,29 @@ const Faq = () => (
         </Header.Content>
       </div>
       <Card.Group className="cardContainer" stackable>
-        <Card className="faqCard">
+       {faqs.map((questions, index) => (
+        <Card className="faqCard" key={index}>
           <Card.Header as="h2" className="cardHead">
-            What are your Covid-19 saftey protocols?
+           {questions.question}
           </Card.Header>
           <Card.Content className="cardMeta">
-            We are taking all necessary precautions, as outlined by State and
-            CDC guidelines, in order to keep not only you, our customers safe
-            but our staff and family members, because we are in this together.
-            We have always been committed to quality and cleanliness with our
-            products, now we are implementing full time masks, gloves, and extra
-            sanitation procedures during deliveries and while processing orders
-            in the warehouse.{" "}
+           {questions.answer}
+           {" "}
           </Card.Content>
         </Card>
-        <Card className="faqCard">
-          <Card.Header as="h2" className="cardHead">
-            How does pick-up work?
-          </Card.Header>
-          <Card.Content className="cardMeta">
-            Pick up days are Tuesday and Friday. Place orders with sales
-            representative via email 2 days prior to pickup. Ex. Order Sunday,
-            pick up Tuesday, order Wednesday, pickup Friday. Come to ABS Seafood
-            SLC warehouse after pre arranging pickup time. We will provide ample
-            ice packs, but please bring your own cooler or ice chest to
-            transport your product.
-          </Card.Content>
-        </Card>
-        <Card className="faqCard">
-          <Card.Header as="h2" className="cardHead">
-            Where do you deliver?
-          </Card.Header>
-          <Card.Content className="cardMeta">
-            Delivery fee ($15) includes door-to-door delivery before 5pm with
-            product packed in gel ice to keep seafood cold. Your order will be
-            delivered Tuesday or Friday depending on which option you prefer.
-            You will receive a text or email when your order is en route.
-          </Card.Content>
-        </Card>
+       ))}
       </Card.Group>
     </div>
   </>
-);
+  )
+};
+
+const Faq = () => {
+  return(
+    <FAQProvider>
+      <FaqComponent></FaqComponent>
+    </FAQProvider>
+  )
+}
 
 export default Faq;

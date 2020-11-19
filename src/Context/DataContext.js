@@ -71,8 +71,7 @@ const DataProvider = ({ children }) => {
     scallop,
     japanScallop,
     squid,
-    unagi
-   
+    unagi;
 
   //Fresh Products
   // phishBox = new Fresh(

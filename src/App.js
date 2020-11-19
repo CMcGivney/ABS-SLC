@@ -35,7 +35,7 @@ function App() {
     ReactGA.set({ page: location.pathname });
     ReactGA.pageview(location.pathname);
   });
-  console.log(history.location.pathname);
+  
   return (
     <>
       <NavBar />
