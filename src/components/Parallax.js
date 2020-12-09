@@ -16,8 +16,8 @@ const ParaImage = () => {
     justifyContent: "center",
   };
 
-  const mobileSize = size.height <= 414 ? "small" : "big";
-
+  const mobileSize = size.width <= 414 ? "small" : "big";
+    console.log(mobileSize, size.width)
   return (
     <Parallax
       bgImage="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto,w_3888/v1600789204/absSeafood/utah-1953477_mfekai.jpg"

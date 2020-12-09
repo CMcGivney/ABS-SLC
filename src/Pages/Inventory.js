@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { SimpleImg } from 'react-simple-img';
-import { Header, Card,} from "semantic-ui-react";
+import { SimpleImg } from "react-simple-img";
+import { Header, Card } from "semantic-ui-react";
 import { DataContext, DataProvider } from "../Context/DataContext";
 
 const InventoryComponent = () => {
@@ -11,9 +11,9 @@ const InventoryComponent = () => {
       <div className="inventoryContainer">
         <div className="faqHead">
           <Header.Content as="h1">Retail Products</Header.Content>
-          <Header.Content as="h5" style={{"fontStyle":"italic"}}>
+          <Header.Content as="h5" style={{ fontStyle: "italic" }}>
             "Contact your regional sales rep. for pricing, availability and
-            wholesale products"
+            wholesale products not listed"
           </Header.Content>
         </div>
         <Header.Content as="h1" className="proHead">
@@ -29,7 +29,7 @@ const InventoryComponent = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="imageProduct"
-                fluid= "true"
+                fluid="true"
               />
               <Card.Content>
                 <Card.Header as="h2" className="cardHead">
@@ -49,14 +49,14 @@ const InventoryComponent = () => {
         <Header.Content as="h1" className="proHead">
           Frozen Products
         </Header.Content>
-        <Card.Group className="cardContainer" stackable>
+        <Card.Group className="cardContainer">
           {seafoodFrozen.map((frozen, index) => (
             <Card className="faqCard" key={index}>
               <SimpleImg
                 src={frozen.image}
                 alt={frozen.image_alt}
                 className="imageProduct"
-                fluid = "true"
+                fluid="true"
               />
               <Card.Content>
                 <Card.Header as="h2" className="cardHead">

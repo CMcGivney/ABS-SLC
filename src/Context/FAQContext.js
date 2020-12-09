@@ -11,17 +11,17 @@ const FAQProvider = ({ children }) => {
   }
 
   let faqs = [];
-  let saftey, pick_up, cost_delivery, where_delivery;
+  let safety, pick_up, cost_delivery, where_delivery, payment;
 
-  saftey = new FAQ(
-    "What are your Covid-19 saftey protocols?",
-    "We are taking all necessary precautions, as outlined by State and CDC guidelines, in order to keep not only you, our customers safe but our staff and family members, because we are in this together. We have always been committed to quality and cleanliness with our products, now we are implementing full time masks, gloves, and extra sanitation procedures during deliveries and while processing orders in the warehouse."
+  safety = new FAQ(
+    "What are your Covid-19 safety protocols?",
+    "We are taking all necessary precautions, as outlined by State and CDC guidelines, to keep not only you, our customers safe but our staff and family members because we are in this together. We have always been committed to quality and cleanliness with our products, now we are implementing full time masks, gloves, and extra sanitation procedures during deliveries and while processing orders in the warehouse."
   );
-  faqs.push(saftey);
+  faqs.push(safety);
 
   pick_up = new FAQ(
-    "How does pick-up work?",
-    "Pick up days are Tuesday and Friday. Place orders with sales representative via email 2 days prior to pickup. Ex. Order Sunday, pick up Tuesday, order Wednesday, pickup Friday. Come to ABS Seafood SLC warehouse after pre arranging pickup time. We will provide ample ice packs, but please bring your own cooler or ice chest to transport your product."
+    "How does retail ordering and pick-up work?",
+    "Place orders with sales representative via email or text by noon on Sunday for a Tuesday pick-up or order Wednesday for a friday pick-up. pick up days are Tuesday and Friday. Come to ABS Seafood SLC warehouse after pre arranging pickup time. We will provide ample ice packs, but please bring your cooler or ice chest to transport your product."
   );
   faqs.push(pick_up);
 
@@ -33,9 +33,15 @@ const FAQProvider = ({ children }) => {
 
   // where_delivery = new FAQ(
   //   "Where do you deliver?",
-  //   "We deliver in the salt lake valley"
+  //   ""
   // );
   //  faqs.push(where_delivery);
+
+  // payment = new FAQ(
+  //   "What are my payment options?",
+  //   ""
+  // );
+  //  faqs.push(payment);
 
   return <FAQContext.Provider value={{ faqs }}>{children}</FAQContext.Provider>;
 };

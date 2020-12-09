@@ -46,7 +46,7 @@
 .mainImage-1{
   width: 50%;
   justify-self: center;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .mainText {
@@ -173,6 +173,7 @@ a.email:hover {
 }
 .contactTitle {
   display: flex;
+  flex-flow: column;
   margin: 10rem 0 2rem;
   justify-content: center;
   justify-self: center;
@@ -214,6 +215,8 @@ a.email:hover {
 .cardContainer {
   justify-content: center;
   padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
 
 }
 .faqCard {
