@@ -1,3 +1,5 @@
+I built this site for a client who requested I follow their parent companies website design. There is no backend database for this site but I will end up building one for the products if the client starts to sell online. For the time being I moved the expensive logic of the product constructor array into a Context Provider. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
