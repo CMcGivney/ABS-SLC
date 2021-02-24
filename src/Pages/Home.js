@@ -6,7 +6,6 @@ import ParaImage from "../components/Parallax.js";
 
 const Home = () => (
   <>
- 
     <ParaImage />
 
     <div className="homeContentGrid ">
