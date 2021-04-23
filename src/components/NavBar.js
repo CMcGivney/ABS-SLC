@@ -1,7 +1,7 @@
 import React from "react";
 import DropDownMenu from "./DropdownNavbar.js";
 import NavBarContent from "./NavBarContent.js"
-import UseWindowSize from "../Hooks/UseWindowSize"
+import UseWindowSize from "../Hooks/useWindowSize"
 
 
 const Navbar = () => {

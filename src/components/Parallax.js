@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import { Image } from "semantic-ui-react";
-import UseWindowSize from "../Hooks/UseWindowSize.js";
+import UseWindowSize from "../Hooks/useWindowSize.js";
 
 const ParaImage = () => {
   const size = UseWindowSize();
