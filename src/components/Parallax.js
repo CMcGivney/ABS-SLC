@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import { Image } from "semantic-ui-react";
-import UseWindowSize from "../hooks/UseWindowSize.js";
+import UseWindowSize from "../Hooks/UseWindowSize.js";
 
 const ParaImage = () => {
   const size = UseWindowSize();
@@ -17,7 +17,7 @@ const ParaImage = () => {
   };
 
   const mobileSize = size.width <= 414 ? "small" : "big";
-    console.log(mobileSize, size.width)
+   
   return (
     <Parallax
       bgImage="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,fl_any_format,q_auto,w_3888/v1600789204/absSeafood/utah-1953477_mfekai.jpg"

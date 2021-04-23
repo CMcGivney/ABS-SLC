@@ -15,12 +15,12 @@ class Footer extends React.Component {
             Stan Battle
             <p style={{ fontSize: "1rem" }}>Regional Sales Manager</p>
           </Header.Content>
-          <Header.Content as="h4">
+          {/* <Header.Content as="h4">
             <Icon name="phone" />
             <a className="email emailBox" href="tel:+1-801-441-9134">
               1-(801)-441-9134
             </a>
-          </Header.Content>
+          </Header.Content> */}
         </div>
         <div className="emailBox">
           <Header.Content as="h4">
