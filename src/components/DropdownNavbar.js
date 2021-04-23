@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { NavLink, withRouter } from "react-router-dom";
-import { useDetectOutsideClick } from "../Hooks/useDetectOutsideClick.js";
+import { useDetectOutsideClick } from "../hooks/useDetectOutsideClick.js";
 import Logo from "../images/ABS-WhiteLogo.png";
 
 const DropDownMenu = () => {
