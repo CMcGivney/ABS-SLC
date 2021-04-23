@@ -1,16 +1,20 @@
 import React from "react";
 import DropDownMenu from "./DropdownNavbar.js";
 import NavBarContent from "./NavBarContent.js"
-import UseWindowSize from "../Hooks/useWindowSize"
+import UseWindowSize from "../Hooks/useWindowSize.js"
 
 
 const Navbar = () => {
   const size = UseWindowSize();
   
-  return (
-     (size.width <= 650) ? <DropDownMenu /> : <NavBarContent /> 
-    
-    ) 
+  const NavbarComponent =
+    size.width <= 650 ? (
+      <DropDownMenu />
+    ) : (
+      <NavBarContent />
+    );
+
+  return NavbarComponent;
 }
 
 
