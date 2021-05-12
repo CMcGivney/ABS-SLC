@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 import { useDetectOutsideClick } from "../hooks/useDetectOutsideClick.js";
-import Logo from "../images/ABS-WhiteLogo.png";
+
+import Logo from "../images/ABS-BlackLogo.png";
 
 const DropDownMenu = () => {
   const dropdownRef = useRef(null);
@@ -9,7 +10,7 @@ const DropDownMenu = () => {
   const onClick = () => setIsActive(!isActive);
 
   return (
-    <header style={navStyles}>
+    <>
       <NavLink to="/" alt="Link to Home Page">
         <img
           height="60"
@@ -20,7 +21,7 @@ const DropDownMenu = () => {
         />
       </NavLink>
       <div className="menu-container">
-        <button onClick={onClick} className="menu-trigger">
+        <button onClick={onClick} className="dropdown_menu-trigger">
           <img
             src="//s.svgbox.net/hero-solid.svg?fill=805ad5&ic=menu"
             alt="menu bars"
@@ -48,18 +49,8 @@ const DropDownMenu = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </>
   );
 };
-const navStyles = {
-  backgroundColor: "#4d574b",
-  margin: "auto",
-  padding: ".5rem",
-  display: "flex",
-  flexFlow: "row nowrap",
-  alignItems: "center",
-  justifyContent: "space-between",
-};
-
 
 export default withRouter(DropDownMenu);
