@@ -20,7 +20,7 @@ function App() {
   const tagManagerArgs = {
     gtmId: "GTM-MZFK97R",
   };
-  
+
   const history = useHistory();
 
   TagManager.initialize(tagManagerArgs);
