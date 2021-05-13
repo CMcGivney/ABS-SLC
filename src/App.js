@@ -16,7 +16,7 @@ function App() {
   ReactGA.initialize("G-LSC0KJ6YGL");
 
   const tagManagerArgs = {
-    gtmId: 'GTM-MPJMMFW'
+    gtmId: 'GTM-MZFK97R'
   }
   TagManager.initialize(tagManagerArgs)
 
