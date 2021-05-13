@@ -13,6 +13,7 @@ import ScrollToTop from "./components/scrollToTop";
 
 import TagManager from "react-gtm-module";
 import ReactGA from "react-ga";
+import RouteChangeTracker from "./util/routeChangeTracker.js";
 
 function App() {
   ReactGA.initialize("G-LSC0KJ6YGL");
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <>
+      <RouteChangeTracker />
       <NavBar />
       <ScrollToTop />
       <Switch>
