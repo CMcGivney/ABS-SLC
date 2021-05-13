@@ -16,9 +16,11 @@ import ReactGA from "react-ga";
 
 function App() {
   ReactGA.initialize("G-LSC0KJ6YGL");
+
   const tagManagerArgs = {
     gtmId: "GTM-MZFK97R",
   };
+  
   const history = useHistory();
 
   TagManager.initialize(tagManagerArgs);
