@@ -6,7 +6,7 @@ const path = require('path');
 const port = process.env.PORT || 8080;
 const app = express();
 
-app.use(sslRedirect());
+app.use(sslRedirect);
 
 app.use(compression())
 app.use(favicon(__dirname + '/build/favicon.ico'));
