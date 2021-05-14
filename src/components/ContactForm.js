@@ -43,7 +43,9 @@ handleSubmit = (e) => {
   phone_num: phone,
  }
 
- emailjs.send('stanbattle15_gmail_com', "template_BP9yPyTn", templateParams, "user_JinG5bR4RRbrs0CgSIRDD"
+ const EMAILJS_KEY = process.env.REACT_APP_EMAILJS_KEY 
+
+ emailjs.send('stanbattle15_gmail_com', "template_BP9yPyTn", templateParams, EMAILJS_KEY
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
