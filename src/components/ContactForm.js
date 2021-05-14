@@ -2,7 +2,7 @@ import React from 'react'
 import { withRouter} from 'react-router-dom'
 import {Form, } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
-require('dotenv').config()
+
 
 
 class ContactForm extends React.Component {
