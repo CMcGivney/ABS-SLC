@@ -29,9 +29,9 @@ class Footer extends React.Component {
               className="email"
               target="_blank"
               rel="noopener noreferrer"
-              href="mailto:Stan@absseafood.com?subject=Mailed from Website"
+              href="mailto:absseafoodslc@gmail.com?subject=Mailed from Website"
             >
-              Stan@ABSSeafood.com
+              ABSseafoodSLC@gmail.com
             </a>
           </Header.Content>
         </div>
