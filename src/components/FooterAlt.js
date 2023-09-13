@@ -31,7 +31,7 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               href="mailto:absseafoodslc@gmail.com?subject=Mailed from Website"
             >
-              ABSseafoodSLC@gmail.com
+              ABSSeafoodSLC@gmail.com
             </a>
           </Header.Content>
         </div>
